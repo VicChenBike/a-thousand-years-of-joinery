@@ -1,0 +1,3 @@
+# Godot 导入扫描忽略标记：本目录为嵌入式 Python 手势运行时落位处（spec §12.2，约300MB，由 D 盘 build_embedded 产物复制产出：cp -r "/d/项目/手势交互/build_embedded/python/." python/ —— 注意复制目录内容而非整目录以保留本标记）。
+# 无此文件时 Godot 会扫描 site-packages（matplotlib CSV 误判翻译资源）导致导出中止（2026-09-18 实证）。
+# 2026-09-18 注：Mimosa 预提交扫描会把 site-packages 内 numpy/mediapipe 官方自带测试代码判为高危拦截提交，故平时本目录仅保留本标记、打包前才回填运行时。

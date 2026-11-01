@@ -1,0 +1,8 @@
+{
+  "dialog_id": "after_chapter1",
+  "_todo": "铁律8边界（spec §8-5）：第1关通关后剧情两页制结构占位「……」为用户拍板授权文本，非编造台词；正式台词由用户提供后仅替换 text 字段。",
+  "lines": [
+    { "speaker": "晷", "text": "……", "portrait": "equipped" },
+    { "speaker": "我", "text": "……", "portrait": "equipped" }
+  ]
+}

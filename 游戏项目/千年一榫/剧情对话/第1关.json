@@ -1,0 +1,466 @@
+{
+  "_说明": [
+    "怎么填：本文件是 JSON 对象，只认两个键——「_说明」（加载器忽略的说明数组）与「rounds」（对话轮次数组）。",
+    "合法 speaker 只有两个：「晷」与「我」，其他值不识别（该轮会被跳过并告警）。",
+    "同一 speaker 连续多句=合并为一轮多 texts，玩家连点多次逐句走完再切下一角色；来回交替、长度不限。",
+    "本文件不控制立绘：对话立绘=晷，按关卡由游戏内常量映射定档，对话期间锁死。",
+    "示例一条：{\"speaker\":\"晷\",\"texts\":[\"到了再讲。\",\"远些，走得稳。\"]}",
+    "英文字段（2026-11-01 增补）：每轮可选「speaker_en」（\"Gui\"/\"I\"，与 speaker 一一对应）与「texts_en」（与 texts 逐句等长、按句一一对应）；英文字段缺失或缺省时回退显示中文 speaker/texts，既有中文字段一律不动。"
+  ],
+  "rounds": [
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "等——这是哪儿？刚才还站着，一眨眼，满天是光。"
+      ],
+      "texts_en": [
+        "Wait—where is this? One moment I was standing, and the next, the sky was all light."
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "在路上。"
+      ],
+      "texts_en": [
+        "On the road."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "哪儿的路上？"
+      ],
+      "texts_en": [
+        "The road to where?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "到了再讲。"
+      ],
+      "texts_en": [
+        "You'll know when we arrive."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "那你——怎么突然变了个大样？"
+      ],
+      "texts_en": [
+        "Then—how did you change so completely?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "形貌于我，本就不是死物。真的、画的、大的、小的，都是我。这一身，我偏爱。",
+        "改了好几处呢。这儿添条飘带，那儿缀一枚……",
+        "（一顿）算了，这些你听了也白听。"
+      ],
+      "texts_en": [
+        "A form is no fixed thing to me. Painted, drawn, great or small—each one is me. This one, though, I favor.",
+        "I've altered it in several places. A ribbon added here, an ornament fastened there...",
+        "(a pause) Never mind. Such talk means nothing to you yet."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "你的模样，还能说改就改？"
+      ],
+      "texts_en": [
+        "You can change your appearance just like that?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "能。要论赶路，还是这一身稳当——真人的皮相，走长了，是有些沉。"
+      ],
+      "texts_en": [
+        "I can. And for the road, this one travels best—a real body's skin grows heavy over long distances."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "行，那说正经的。带我去干什么？"
+      ],
+      "texts_en": [
+        "Fine. Let's get serious, then. What are you taking me for?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "找一个人。找到他，是我的正事。"
+      ],
+      "texts_en": [
+        "To find someone. Finding him is my proper charge."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "谁？"
+      ],
+      "texts_en": [
+        "Who?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "还不确定，是不是你。"
+      ],
+      "texts_en": [
+        "Not yet certain if it is you."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "一个字都不给？"
+      ],
+      "texts_en": [
+        "Not even one word?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "不给。记着——若你不是他，我原样送你回去，抹掉这一路。你不会少任何东西，只当一场梦。"
+      ],
+      "texts_en": [
+        "Not one. Remember this—if you are not the one, I will send you back as you were and erase this whole journey. You will lose nothing; you will take it for a dream."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "都要抹我记忆了，一个名字还舍不得？"
+      ],
+      "texts_en": [
+        "You'll erase my memory anyway, yet you grudge me a single name?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "正因要抹，才不能说。记忆未必删得尽，捞回只言片语，反受其扰。"
+      ],
+      "texts_en": [
+        "Precisely because it must be erased, it cannot be spoken. Memory is not always wiped clean—a stray phrase fished back up only troubles the mind."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……想得真远。"
+      ],
+      "texts_en": [
+        "...You think of everything."
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "远些，走得稳。",
+        "还有一桩，先交个底。"
+      ],
+      "texts_en": [
+        "Foresight keeps the road steady.",
+        "One more matter. Let me be frank from the start."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "嗯？"
+      ],
+      "texts_en": [
+        "Hmm?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "我的模样，我自己改得；那个人，也改得。"
+      ],
+      "texts_en": [
+        "I may shape my own appearance—and so may that person."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "他凭什么改你？"
+      ],
+      "texts_en": [
+        "By what right could he change you?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "这一身，本就是他身上的东西，散出来、凝成的形。硬要说，像他身边一个使唤人。",
+        "所以——若你真是他，往后我的模样，你也改得。"
+      ],
+      "texts_en": [
+        "This form is made of what was his, gathered and condensed. Call it, if you must, the shape of a servant at his side.",
+        "So—if you truly are him, then hereafter my appearance will be yours to shape as well."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "改你？"
+      ],
+      "texts_en": [
+        "Change you?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "改我。不过不急，往后有的是机会试。"
+      ],
+      "texts_en": [
+        "Change me. There is no hurry—there will be time enough to try."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "凭什么把我卷进来？"
+      ],
+      "texts_en": [
+        "Why drag me into this?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "有人给我留了线索。时间、地点，写得极细。",
+        "细到我去的那一日、那一步，正好听见你一句自言自语。"
+      ],
+      "texts_en": [
+        "Someone left me a clue. The time and place, written out in fine detail.",
+        "So fine that on that very day, at that very step, I heard you murmur to yourself."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "我说什么了？"
+      ],
+      "texts_en": [
+        "What did I say?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "“总觉得丢了什么。”一句不多，一句不少。",
+        "那一眼起，我心里就有数了——多半是你。"
+      ],
+      "texts_en": [
+        "“I always feel I've lost something.” Not a word more, not a word less.",
+        "From that glance on, I knew in my heart—it was most likely you."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "多半？"
+      ],
+      "texts_en": [
+        "Most likely?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "留两分余地，总没错。"
+      ],
+      "texts_en": [
+        "Leaving a little room for doubt never hurts."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "就凭这些？"
+      ],
+      "texts_en": [
+        "On just that?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "够我把你带上。错了也不打紧——退回去，换个时间地点，再走一趟便是。"
+      ],
+      "texts_en": [
+        "Enough to bring you along. And if I am wrong, no matter—go back, pick another time and place, and make the journey again."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "那你也不急？"
+      ],
+      "texts_en": [
+        "So you're not in a hurry?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "急什么。时间在我这儿，是路，不是墙。"
+      ],
+      "texts_en": [
+        "What is there to rush? For me, time is a road, not a wall."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "那你倒说说，我怎么才算他要找的人？"
+      ],
+      "texts_en": [
+        "Then tell me—how would I count as the one he seeks?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "看他身上的本领，你使不使得出来。"
+      ],
+      "texts_en": [
+        "By whether the craft that lives in him will answer to your hands."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "什么本领？"
+      ],
+      "texts_en": [
+        "What craft?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "那人有个本领，世代传承的，叫「锐眼」。",
+        "木料该从何处下刀，卯眼开在哪一处，构件怎么咬合——不必人教，一眼便知。"
+      ],
+      "texts_en": [
+        "That person bore a craft, passed down through generations, called the Keen Eye.",
+        "Where to set the blade on timber, where to cut the mortise, how the members lock together—no one teaches it; one glance is enough."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "一眼便知？"
+      ],
+      "texts_en": [
+        "Known at a glance?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "你身上应该也有，但像是还没长开——使一回，得费你不少力气。"
+      ],
+      "texts_en": [
+        "You should carry it too, but it seems not yet full-grown—each use will cost you no small effort."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "费什么？"
+      ],
+      "texts_en": [
+        "Costs what?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "天赋。你身上还留着些底子，够你试着使几回。接成一回，天赋就回来一分；回来一分，你就多想起一分。"
+      ],
+      "texts_en": [
+        "Talent. Some foundation still remains in you—enough to try a few times. Each finished joint returns a measure of it; each measure returned, a memory stirs."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "善。"
+      ],
+      "texts_en": [
+        "Good."
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "……到了。小心，几千年前的泥，可不好擦。"
+      ],
+      "texts_en": [
+        "...We're here. Mind yourself—mud from a few thousand years past does not wipe off easily."
+      ]
+    }
+  ]
+}

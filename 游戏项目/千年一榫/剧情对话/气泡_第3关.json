@@ -1,0 +1,44 @@
+{
+  "_说明": [
+    "见证者点击气泡台词文件：格式=对象 {_说明, lines}，lines=字符串数组（句子池，句数不限）。",
+    "第三关元代语境：文本不绑定任何具体外貌与服饰，通用适配所有皮肤形象；性格活泼开朗、鼓励为主，融入元代‘顺木之性、大巧若拙’的大匠风范与机制引导。",
+    "抽取与播放归 Y5 波（洗牌袋整轮不重复；池空/缺文件不弹+告警）。",
+    "英文字段（2026-11-01 增补）：可选「lines_en」（与 lines 逐条等长、按句一一对应）；lines_en 缺失或缺省时回退显示中文 lines，既有中文字段一律不动。"
+  ],
+  "lines": [
+    "元代的工匠最敢想敢干！木头要是长弯了，他们就顺着弯处削成大梁，这叫顺应天性！",
+    "手稳心宽，大刀阔斧！元代的卯眼往往开得肥厚开阔，别畏手畏脚的，放开胆子下刀！",
+    "若是拿不准从哪儿拼，就开一下‘锐眼’瞧瞧。这门本事你现在用得越来越顺手了嘛。",
+    "木头自己会长，人不过是帮它找个最舒服的去处。别跟它的纹理较劲，顺着来！",
+    "怎么样，现在的模样看着顺眼不？要是想换个心情，随时去衣橱里挑一身，我随叫随到～",
+    "刚才这一下卡得真结实！听听这木头咬合的闷响声，骨头缝里都透着一股扎实劲儿！",
+    "当年元代的匠人造大殿，连粗大立柱都敢直接减掉好几根，全凭榫卯大梁在头顶硬扛，厉害吧？",
+    "转一转，多换几个角度瞅瞅。正面看着严丝合缝，侧面说不定还留着退步的空当呢。",
+    "累了没？做这粗大构件确实费力气。要不歇两分钟？反正这几百年前的木头，可跑不了。",
+    "大巧若拙，大直若屈。别看它长得粗憨，内里的榫头卯眼，可比谁都精巧周密。",
+    "天赋值攒够了没？够了就去衣橱里多开几件新衣裳，我好几个模样可都眼巴巴盼着出来透气呢。",
+    "离完全找回手艺就差这么一小步了！加把劲，让我瞧瞧你当年的通天本领！",
+    "顺纹下刀，脆生利落；逆纹硬削，保准崩茬。木头的规矩就这么简单，全在你一念之间。",
+    "不用钉、不用胶，就这么硬碰硬咬在一块儿，千百年风雨都撼不动它分毫，这就是咱们的底气！",
+    "别慌，多试错几次算什么！哪位名匠在成为传奇之前，手底下没刨废过几方烂木头？",
+    "我在边上盯着呢，瞧你凿木头这认真的模样，倒真有当年几分大宗师的神气了！"
+  ],
+  "lines_en": [
+    "Yuan craftsmen were the boldest dreamers and doers of all! If the wood grew crooked, they carved the curve itself into a great beam—working with its nature, they called it!",
+    "Steady hands, open heart, bold strokes! Yuan mortises were cut broad and generous—none of that timid, hedging style. Commit to the cut!",
+    "If you can't tell where to join, open the Keen Eye and have a look. You're getting smoother with it all the time.",
+    "The wood grows on its own; people merely help it find its most comfortable place. Don't fight its grain—go along with it!",
+    "Well? Do you like how I look now? If you want a change of mood, pick me an outfit from the Wardrobe anytime—I'm at your call~",
+    "That last fit locked in solid! Hear that deep thud of wood biting wood? There's real backbone in that sound!",
+    "Back in the Yuan, builders dared to drop whole rows of thick columns from their great halls and let mortise-tenon beams carry the roof alone. Impressive, no?",
+    "Rotate it—try a few more angles. What looks seam-tight from the front may still hold room to give from the side.",
+    "Tired? These hefty members really do take it out of you. How about a two-minute rest? These centuries-old timbers aren't going anywhere.",
+    "Great skill looks clumsy; great straightness looks bent. Rough and homely as it appears, the tenons and mortises within are more precise than anyone's.",
+    "Saved up enough Talent yet? Then open a few more new outfits in the Wardrobe—several of my looks are longing to come out for a breath of air.",
+    "You're one small step from fully reclaiming your craft! Push on—show me that heaven-reaching skill of yours!",
+    "Cut with the grain: crisp and clean. Plane against it: you'll surely tear the fibers. The wood's rule is that simple—it all turns on your one thought.",
+    "No nails, no glue—wood gripping wood, hard against hard, unmoved by a thousand years of wind and rain. That is the ground we stand on!",
+    "Don't panic—what are a few failed tries? Before any famous master became a legend, how many boards had he planed to waste?",
+    "I'm watching from right here—and that earnest face of yours at the chisel already has a touch of the grand old master's air!"
+  ]
+}

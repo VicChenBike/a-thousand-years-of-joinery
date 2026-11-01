@@ -1,0 +1,259 @@
+{
+  "_说明": [
+    "怎么填：本文件是 JSON 对象，只认两个键——「_说明」（加载器忽略的说明数组）与「rounds」（对话轮次数组）。",
+    "合法 speaker 只有两个：「晷」与「我」，其他值不识别（该轮会被跳过并告警）。",
+    "同一 speaker 连续多句=合并为一轮多 texts，玩家连点多次逐句走完再切下一角色；来回交替、长度不限。",
+    "本文件不控制立绘：对话立绘=晷，按关卡由游戏内常量映射定档，对话期间锁死。",
+    "示例一条：{\"speaker\":\"晷\",\"texts\":[\"到了再讲。\",\"远些，走得稳。\"]}",
+    "JSON 文件不得写注释（Godot 4.7 解析会失败），说明只能写在「_说明」里。",
+    "英文字段（2026-11-01 增补）：每轮可选「speaker_en」（\"Gui\"/\"I\"，与 speaker 一一对应）与「texts_en」（与 texts 逐句等长、按句一一对应）；英文字段缺失或缺省时回退显示中文 speaker/texts，既有中文字段一律不动。"
+  ],
+  "rounds": [
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "（低头拍了拍衣角）呼……总算是从那几千年前的河姆渡爬出来了，上一关那满地的黄土泥巴，可算全给甩干净了。",
+        "（一抬头，猛地愣住）等等……你谁啊？！上一程明明还是个落落大方的姑娘，怎么一眨眼……束发戴簪、素白长袍、手里还摇着把折扇，摇身变成个男孩子了？！"
+      ],
+      "texts_en": [
+        "(brushing off my clothes) Whew... finally crawled out of that Hemudu site from thousands of years ago. The yellow mud all over the last level—clean off at last.",
+        "(looking up, suddenly frozen) Wait... who are you?! Last time you were a poised young lady, and in the blink of an eye—hair bound with a pin, plain white robes, a folding fan in hand—you've turned into a boy?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（‘唰’的一声潇洒抖开折扇，得意洋洋地轻摇两下）",
+        "如何？本公子这身行头，瞧着可称得上‘陌上人如玉’？",
+        "我早便与你说过，我乃通玄灵光所聚，本就无形无相、超脱了凡尘俗世的男女之分。",
+        "虽然嘛……我内心底子确实更偏向做个女孩子，平日里也最喜欢化作女儿身到处晃悠——",
+        "但谁规定我就不能当当小书生了？穿梭诸朝各代嘛，自然怎么好玩怎么来！我此番就是单纯想扮个男孩子过过瘾，特地挑了这身宋代素白襕衫，岂不风流倜傥、妙哉妙哉？"
+      ],
+      "texts_en": [
+        "(snapping the folding fan open with a flourish, swaying it smugly a couple of times)",
+        "Well? This young gentleman's outfit—does it not live up to “a jade of a man upon the road”?",
+        "I told you long ago: I am a spirit of mystic light, formless by nature, above the mundane divide of man and woman.",
+        "Although... at heart I do lean toward being a girl, and I do so love wandering about in a maiden's form—",
+        "but who says I can't play a young scholar for a while? When you travel through the dynasties, you do whatever amuses you! This time I simply wanted the fun of being a boy, so I picked out this plain white Song scholar's robe. Dashing, wouldn't you say? Splendid, splendid!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……好一个风流书生。不过你这变化也太彻底了吧？不仅人变了，怎么说话还摇着折扇文绉绉起来了？",
+        "上一程还板着张脸、满嘴‘到了再讲’，跟个冷面考官似的，现在怎么突然嬉皮笑脸、一口一个‘本公子’了？"
+      ],
+      "texts_en": [
+        "...Quite the dashing scholar. But isn't this a bit thorough of you? Everything changed—even your manner of speaking, all bookish now, with the fan aflutter.",
+        "Last time you kept a straight face and nothing but “you'll know when we arrive,” like some cold-faced examiner. How come you're suddenly all grins, chirping “this young gentleman” at every turn?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "哈！上一程那不是八字还没一撇么，万一抓错了人，我还得规规矩矩把你原样送回去，自然得端着些威严。",
+        "现在嘛——基本功一试便知，我敢打一百个包票，你就是我要找的那个人！既然是‘自家人’，我还苦着脸端给谁看呀？",
+        "对了，刚才在石器时代拼木头的时候，你应该已经试着使过「锐眼」那门本事了吧？",
+        "还有……方才在衣橱里，是不是也琢磨着想给我换身衣裳试试了？"
+      ],
+      "texts_en": [
+        "Ha! Last time, nothing was settled yet—if I'd seized the wrong person, I'd have had to send you home exactly as you came, so naturally I had to keep up some dignity.",
+        "But now? Your fundamentals passed the test the moment we tried—I'd stake a hundred bets that you are the one I'm looking for! And with one of our own, who is left to keep a straight face for?",
+        "By the way—back in the Stone Age, piecing that wood together, you did give the Keen Eye a try, didn't you?",
+        "And... just now in the Wardrobe, weren't you toying with the idea of changing my clothes?"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "你还真别说，刚才路过那衣橱，我确实顺手点了几下想给你换回去。",
+        "可奇了怪了，屏幕上冷不丁弹出一串‘无法更换形象’，怎么点都动不了。第一关你不是还信誓旦旦说‘往后随我改’么，怎么这会儿突然改不了了？"
+      ],
+      "texts_en": [
+        "Now that you mention it, when I passed the Wardrobe just now, I did click around a few times trying to change you back.",
+        "But the strange thing is, a message popped right up on screen—“appearance cannot be changed”—and nothing would budge no matter how I clicked. Back in Level 1, didn't you swear “from now on, change me as you please”? Why can't I change you all of a sudden?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（把折扇一合，敲了敲手心，理直气壮）",
+        "因为我不想。"
+      ],
+      "texts_en": [
+        "(snapping the fan shut, rapping it against the palm, perfectly self-assured)",
+        "Because I don't feel like it."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "？？？",
+        "……‘因为你不想’？！你之前还说你的模样随我改，现在倒好，你一句‘你不想’，我就连碰都碰不得？！",
+        "那我岂不是全得看你心情？这改模样的本事要来有何用？！"
+      ],
+      "texts_en": [
+        "???",
+        "...“Because you don't feel like it”?! You said before that your appearance was mine to change—and now one “I don't feel like it,” and I can't so much as touch it?!",
+        "So everything hinges on your mood, does it? What use is this shape-changing gift of yours, then?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "哎哎哎，莫急莫急！你且听我细细道来——",
+        "我的形貌化身，与你自身的神通水平息息相关。你想改换我的装扮，需得消耗你积攒的一点天赋值去开启；但反过来，我化身为不同的模样，那可都是有独特‘玄机与增益’相赠的！",
+        "或能静气凝神，或能助你明察秋毫……咳，总之衣橱说明里写得明明白白，厉害着呢！",
+        "至于眼下嘛，单纯是本公子刚刚换上这身折扇白袍，新鲜劲儿正浓，在穿梭路上闲着也是闲着，先容我臭美显摆片刻！",
+        "等一会正式到了宋代、你开始上手琢磨做榫卯的时候，那可就随你的便了，你爱换哪套便换哪套，我绝不拦你！"
+      ],
+      "texts_en": [
+        "Whoa, whoa, no need to fuss! Hear me out, patiently—",
+        "My forms are bound tight to your own level of divine craft. To change my outfit, you'll need to spend a little of the Talent you've saved up to unlock it; but in return, each of my appearances comes with its own special “mysteries and boons”!",
+        "Some calm the mind and gather the spirit; some sharpen your sight to catch the finest hair of detail... ahem—anyway, the Wardrobe notes spell it all out plainly. They're quite something!",
+        "As for right now—it's only that this young gentleman has just put on this fan-and-white-robe look, and the novelty is still strong. The road between eras is dull anyway, so indulge my vanity a moment!",
+        "Once we properly reach the Song and you set your mind to mortise-tenon work, do exactly as you please—wear whichever look you fancy on me, and I won't stand in your way!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "行行行，算你歪理一套一套的。那现在能把正事讲明白了？",
+        "你到底为什么要拉着我时空穿梭？又凭什么就凭刚才那一关，这么笃定我就是你要找的人？"
+      ],
+      "texts_en": [
+        "Fine, fine, fine—your crooked logic never runs dry. Now, can we get the real business straight?",
+        "Why exactly are you dragging me across time and space? And on the strength of one level just now, how can you be so sure I'm the one you're looking for?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "你以为我第一站为何非要把你扔到几千年前的石器时代去？",
+        "因为这门手艺最本源的规矩与筋骨，早在七千多年前河姆渡先民磨石成器、构木为巢时，就已经在他们掌心里成型了。",
+        "你要真是他，哪怕脑子里忘得一干二净，指尖碰到木料、榫头咬进卯眼的那一瞬，身体里的本能是绝骗不了人的。",
+        "瞧，这不就严丝合缝对上了么！"
+      ],
+      "texts_en": [
+        "Why do you think my first stop was to drop you square into the Stone Age, thousands of years back?",
+        "Because the deepest rules and bones of this craft took shape in the palms of the Hemudu ancestors over seven thousand years ago, when they ground stone into tools and framed wood into homes.",
+        "If you truly are him, then however clean the forgetting, the instant your fingertips meet timber and the tenon bites into the mortise, the instinct in your body cannot lie.",
+        "See? It fits seam to seam, like a tenon sliding home!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "那……我到底遗忘了什么？我又为什么会身在现代，连自己以前是谁、做过什么都毫无头绪？"
+      ],
+      "texts_en": [
+        "Then... what exactly have I forgotten? And why am I living in the present day, without the first clue who I once was or what I ever did?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（眼神微微放缓，轻叹一口气）这个嘛，说来话长。当年究竟出了什么变故，连我也难以尽窥全貌。但我可以先给你交个实底——",
+        "我呢，并非过去的你，更非什么天降的仙灵。我是未来某个时间节点上，你自身通玄的神通灵光，所幻化出来的一个独立意识体。",
+        "真要论起来，倒真像你身边一个替你奔波操持的使唤人呢。",
+        "我的使命，便是穿梭浩瀚的光阴长河，找到过去的你——也就是现在的你。带你重新溯流而上，把那些散落在岁月里的技艺与记忆，一步步唤醒。"
+      ],
+      "texts_en": [
+        "(his gaze softening a little, a light sigh) That is a long story. What exactly went wrong back then, even I cannot fully see. But let me give you the honest truth first—",
+        "I am not your past self, nor some immortal descended from the heavens. I am an independent consciousness, conjured from the mystic light of your own divine craft, at some node of time in the future.",
+        "Strictly speaking, I'm rather like a servant at your side, running about and keeping things in order for you.",
+        "My charge is to travel the vast river of time, find the you of the past—that is, the you of now—and lead you back upstream, waking the craft and the memory scattered through the years, step by step."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "未来的我……的神通？那这门能让你跨越千年来唤醒的手艺到底是……"
+      ],
+      "texts_en": [
+        "The divine craft... of my future self? Then this craft of yours, that could carry you across a thousand years to wake it—what exactly is it?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "是咱们脚下这片土地上，历经数千年风霜雨雪、薪火相传的非遗绝技——榫卯。",
+        "一榫一卯，一凸一凹，阴阳互生。不用一钉一铁，仅凭木构交错，便能立高堂广厦于大地，抗百年地震、历千年岁月而不散。",
+        "这是刻在你血脉里的本事。所以，咱们这一趟走的是一条‘寻根归途’。",
+        "从文明破晓的石器时代启程，顺着岁月长河逐次走过宋、元、明，重温历朝历代匠人手里的巧夺天工，直到重回现代。当你把每一朝的匠心都亲自重温一遍，你的记忆与神通，自然也就彻底醒过来了。"
+      ],
+      "texts_en": [
+        "It is the intangible-heritage marvel of this very land beneath our feet, tempered by thousands of years of wind and frost, passed hand to hand—mortise-tenon, sunmao.",
+        "One tenon, one mortise; one protruding, one hollow—yin and yang begetting each other. Without a single nail or bar of iron, woodwork alone can raise grand halls upon the earth, stand through a hundred years of earthquakes and a thousand years of time, and never come apart.",
+        "This is a craft carved into your very blood. So this journey of ours is a road home to the roots.",
+        "We set out from the Stone Age at civilization's dawn, follow the long river of years through Song, Yuan, and Ming, revisit the heaven-defying work in the artisans' hands of every era, and return at last to the present. Once you have relived each dynasty's craftsmanship with your own hands, your memory and your craft will wake in full."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "原来如此……那照你这么说，咱们前头这趟穿梭的目的地，便是宋代了？"
+      ],
+      "texts_en": [
+        "I see... So by your telling, the destination of this next crossing is the Song dynasty?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "正是！莫以为咱们在闲聊，脚下的时空大阵可片刻未歇。前面光影渐凝，宋朝转瞬即至啦！",
+        "宋代的榫卯，可比石器时代的粗犷灵巧太多了。你可莫小瞧了这木头之间的交错——",
+        "它既能峙立于巍峨殿宇、重檐九叠之上，化作飞檐挑角、消解千钧重力的斗栱梁架；",
+        "亦能隐秀于素雅书斋、琴台几榻之间，敛作严丝合缝、温润内敛的案头雅具；",
+        "更能灵动于百宝妆奁、鲁班机巧之巧，变作暗扣交错、别有洞天的玲珑巧器；",
+        "它还深嵌于市井坊巷、柴米油盐之中，托起万户炊烟、经受岁月洗礼的人间日常！"
+      ],
+      "texts_en": [
+        "Exactly! And don't imagine we're merely chatting—the grand formation of time and space underfoot has not rested a moment. The light ahead is thickening; the Song dynasty arrives in a blink!",
+        "Song-dynasty joinery is far, far nimbler than the rugged work of the Stone Age. Never underestimate the interlacing of these timbers—",
+        "it can stand lofty atop towering halls and ninefold layered eaves, becoming the dougong brackets and beam-frames that lift the flying eaves and dissolve a thousand-weight of gravity;",
+        "it can keep its grace quietly in plain, elegant studios, among qin stands, desks and couches, folding itself into seamless, warm, reserved delights for the desk;",
+        "it can dance nimbly through jewel-caskets and the cunning of Lu Ban's devices, turning into exquisite contrivances of hidden clasps and whole worlds within;",
+        "and it runs deep through market lanes and the rice-and-firewood of common days, holding up the hearth-smoke of ten thousand households, seasoned by the years!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "这话说得倒真把我的手瘾勾起来了。那到了宋代，我们要应对的是哪一件器物？"
+      ],
+      "texts_en": [
+        "Well, that has certainly stirred my hands' itch. So when we reach the Song, which piece will we be facing?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "一座传承千年的古建筑要件！至于是哪一部分，先卖个关子——",
+        "光幕散了，站稳咯！咱们——入宋！"
+      ],
+      "texts_en": [
+        "A vital member of an ancient building a thousand years in the making! As for which part—let me keep you in suspense a while—",
+        "The screen of light is scattering—hold your footing! We—enter the Song!"
+      ]
+    }
+  ]
+}

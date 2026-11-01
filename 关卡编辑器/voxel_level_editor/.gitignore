@@ -1,0 +1,3 @@
+# Godot 导入缓存与 GoPeak 运行时临时文件（编辑器工程自己的排除，不动仓库根 .gitignore）
+.godot/
+gopeak_cache/

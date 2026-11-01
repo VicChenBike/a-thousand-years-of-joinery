@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/shared/window_buttons.gd" id="1_wb"]
+
+[node name="WindowButtons" type="HBoxContainer"]
+layout_mode = 3
+theme_override_constants/separation = 4
+script = ExtResource("1_wb")

@@ -1,0 +1,25 @@
+# ===== Godot 缓存与导入产物 =====
+游戏项目/千年一榫/.godot/
+游戏项目/千年一榫/gopeak_cache/
+
+# ===== 构建产物（单独管理，不入库）=====
+构建产物/
+
+# ===== 本地文档（不入库）=====
+/*.docx
+/*.pdf
+
+# ===== Python 手势运行时 =====
+# __pycache__ 缓存不入库
+游戏项目/千年一榫/gesture_runtime/__pycache__/
+# 嵌入式 Python 运行时（约 300MB，不入库；克隆后按 README 引导自行准备 Python 环境）
+游戏项目/千年一榫/gesture_runtime/python/*
+!游戏项目/千年一榫/gesture_runtime/python/.gdignore
+
+# ===== 字体坏档备份 =====
+游戏项目/千年一榫/fonts/_backup_broken/
+
+# ===== 工具会话目录（不入库）=====
+.mimosa/
+.zcode/
+.superpowers/

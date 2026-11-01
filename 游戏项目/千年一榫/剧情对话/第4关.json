@@ -1,0 +1,145 @@
+{
+  "_说明": [
+    "怎么填：本文件是 JSON 对象，只认两个键——「_说明」（加载器忽略的说明数组）与「rounds」（对话轮次数组）。",
+    "合法 speaker 只有两个：「晷」与「我」，其他值不识别（该轮会被跳过并告警）。",
+    "同一 speaker 连续多句=合并为一轮多 texts，玩家连点多次逐句走完再切下一角色；来回交替、长度不限。",
+    "本文件不控制立绘：对话立绘=晷，按关卡由游戏内常量映射定档，对话期间锁死。",
+    "示例一条：{\"speaker\":\"晷\",\"texts\":[\"到了再讲。\",\"远些，走得稳。\"]}",
+    "JSON 文件不得写注释（Godot 4.7 解析会失败），说明只能写在「_说明」里。",
+    "英文字段（2026-11-01 增补）：每轮可选「speaker_en」（\"Gui\"/\"I\"，与 speaker 一一对应）与「texts_en」（与 texts 逐句等长、按句一一对应）；英文字段缺失或缺省时回退显示中文 speaker/texts，既有中文字段一律不动。"
+  ],
+  "rounds": [
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "呼……这元代的粗犷大构件，总算是顺顺当当咬合上了。",
+        "你还真别说，连着走过石器时代、大宋和大元，我这双手现在是越用越灵光、得心应手得很！我甚至觉得……自己当年的本事，是不是已经完全找补回来了？"
+      ],
+      "texts_en": [
+        "Phew... those rugged Yuan timbers finally locked home, smooth as could be.",
+        "And I'll say this—through the Stone Age, the great Song, and the great Yuan one after another, these hands of mine only grow sharper with use, working like a part of me! I'm beginning to wonder... have I already recovered everything I once had?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（轻挽了个潇洒的剑花，把剑锋微微一倾，扑哧一乐）",
+        "哈！这才哪到哪呀，尾巴这就翘上天啦？",
+        "方才那几下虽然利落，但也仅仅是把你骨子里的熟练劲儿给翻出来了而已，离你当年的真正境界，可还差着一层‘通透与极境’呢！",
+        "不过嘛……我隐隐有种预感，如果接下来路上没出什么岔子或者意外的话——这最后一次，你就能彻底大功告成、完全恢复了！"
+      ],
+      "texts_en": [
+        "(spinning a deft flourish of the sword, tipping the blade slightly, bursting out laughing)",
+        "Ha! And this is barely the start—are you lifting your tail to the sky already?",
+        "Those moves just now were clean enough, but they only turned up the fluency buried in your bones. From the realm you truly held back then, you are still one layer short—“perfect clarity, the utmost realm”!",
+        "Though... I have this faint presentiment: if nothing goes amiss or astray on the road ahead—this very next leg, and you will finish it once and for all, fully restored!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "？？？",
+        "等一下，什么叫‘如果没有出意外的话’？合着这穿越溯流的半道上……还会出意外？！"
+      ],
+      "texts_en": [
+        "???",
+        "Hold on—what do you mean “if nothing goes amiss”? So halfway through this crossing against the current... something could actually go wrong?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（无辜地眨了眨大眼睛，歪了歪头）",
+        "哎呀，其实我也不知道嘛——I don't know！",
+        "实话告诉你吧，当初在未来时空启程穿越之前，未来的你好像还真特意凑到我耳边叮嘱了句什么极重要的事……但是我、我当时真没听清嘛！"
+      ],
+      "texts_en": [
+        "(blinking those big eyes innocently, tilting her head)",
+        "Aw, but I honestly don't know—I haven't the foggiest!",
+        "I'll tell you the truth: back when we set out from the future, the future you did lean in and whisper some most important instruction in my ear... but I, I really didn't catch it, all right?!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……哈？！连这你都能听不清？！",
+        "关乎身家性命和记忆复苏的大事，未来的我给你交代关键情报，你居然能漏听？！"
+      ],
+      "texts_en": [
+        "...What?! Even this, you failed to hear clearly?!",
+        "A matter of life and limb and the return of my memory—my future self handed you critical intelligence, and you just missed it?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（气鼓鼓地把长剑一收，背到身后，腮帮子微鼓）",
+        "哎呀，你凶什么嘛！这根本不怪我好不好，当然……也不全怪未来的你！",
+        "反正这事儿里头藏着个大秘密！我发誓我绝不是故意漏听的……至于到底是什么秘密，哼，本仙官暂时还不想讲，反正是个大悬念！"
+      ],
+      "texts_en": [
+        "(huffing, sweeping the long sword behind her back, cheeks slightly puffed)",
+        "Oh, why so fierce! It's not my fault at all, okay? Of course... it's not entirely your future self's fault either!",
+        "In any case, a great secret is wrapped up in this! I swear I didn't miss it on purpose... as for what the secret actually is—hmph, this immortal official isn't telling yet. It's a grand cliffhanger, that's what!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……行行行，你身上秘密多，我不逼你招供总行了吧。不过瞧你这身新行头——这翠玉发冠、素白道袍，手里居然还提了柄雪亮的长剑，怎么，这大明的工匠现在出门削木头，都流行佩剑了？"
+      ],
+      "texts_en": [
+        "...Fine, fine, fine. You and your many secrets—I won't force a confession. But look at this new outfit of yours—a jade-green hair crown, plain white Taoist robes, and even a gleaming long sword in hand. What, do Ming craftsmen now carry swords when they go out to carve wood?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（顿时喜笑颜开，剑尖朝前轻轻一指，神采奕奕）",
+        "那是！大明风华，文武兼修！持剑是侠气，握凿是巧工，本姑娘……咳，本剑客扮得可还像样？",
+        "说回正题，咱们眼下这一站可非同小可，乃是整个华夏榫卯技艺的‘集大成者’——大明！",
+        "大明朝不仅有紫禁城这般气吞山河、举世无双的巍峨皇家殿堂，更有天下闻名、精雅入骨的‘明式家具’。",
+        "哪怕只是案头一把圈椅、一个多宝格，里头藏着的夹头榫、插肩榫、粽角榫，那可都是肉眼瞧不见分毫破绽的‘暗榫绝技’！看似浑然天成，内里机关算尽！",
+        "这一关，就要考你从‘随性大开大合’，重回‘极致工整精密’的造极境界！"
+      ],
+      "texts_en": [
+        "(beaming at once, flicking the sword-tip forward lightly, radiant)",
+        "You bet! The splendor of the Ming—letters and arms together! The sword is the knight's spirit; the chisel, the craftsman's art. Does this young lady... ahem, does this swordswoman make a convincing figure?",
+        "Back to business. This stop of ours is no small matter: it is the grand summation of the whole of China's mortise-tenon craft—the Ming!",
+        "The Ming had not only imperial halls like the Forbidden City, majestic enough to swallow mountains and rivers, unmatched under heaven, but also the world-renowned Ming-style furniture, elegant to the bone.",
+        "Even a single round-backed chair on the desk, a single curio shelf—the horsehoof tenons, shoulder tenons, and three-way corner joints hidden within are “secret-tenon marvels” without a hair of flaw visible to the naked eye! Seemingly born whole of nature, within, calculated to the last mechanism!",
+        "This level will test you: from “free, sweeping boldness” back to the summit of “exact, meticulous precision”!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "极境么……听起来正合我意。那在这一程，就让我瞧瞧我当年的全部实力，到底能攀到多高吧！"
+      ],
+      "texts_en": [
+        "The utmost realm, then... suits me just fine. On this leg, then, let me see how high the full strength of my former self can climb!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "长剑开路，日月为照！前面紫气升腾、巍峨帝京已近在眼前啦——",
+        "走咯！咱们——入明！"
+      ],
+      "texts_en": [
+        "The long sword clears the way; sun and moon for our light! Ahead, the purple aura rises—the towering imperial capital is nearly in sight—",
+        "Off we go! We—enter the Ming!"
+      ]
+    }
+  ]
+}

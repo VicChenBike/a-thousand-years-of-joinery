@@ -1,0 +1,103 @@
+{
+  "_说明": [
+    "怎么填：本文件是 JSON 对象，只认两个键——「_说明」（加载器忽略的说明数组）与「rounds」（对话轮次数组）。",
+    "合法 speaker 只有两个：「晷」与「我」，其他值不识别（该轮会被跳过并告警）。",
+    "同一 speaker 连续多句=合并为一轮多 texts，玩家连点多次逐句走完再切下一角色；来回交替、长度不限。",
+    "本文件不控制立绘：对话立绘=晷，按关卡由游戏内常量映射定档，对话期间锁死。",
+    "示例一条：{\"speaker\":\"晷\",\"texts\":[\"到了再讲。\",\"远些，走得稳。\"]}",
+    "JSON 文件不得写注释（Godot 4.7 解析会失败），说明只能写在「_说明」里。",
+    "英文字段（2026-11-01 增补）：每轮可选「speaker_en」（\"Gui\"/\"I\"，与 speaker 一一对应）与「texts_en」（与 texts 逐句等长、按句一一对应）；英文字段缺失或缺省时回退显示中文 speaker/texts，既有中文字段一律不动。"
+  ],
+  "rounds": [
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "啧啧啧！厉害啊你！方才在宋代那一关，手法简直绝了！",
+        "那几道榫口咬合得严丝合缝，连一丝光都漏不过去！我原以为你刚找回手感，还得磕碰两下，没想到居然这般心灵手巧、上手如飞！"
+      ],
+      "texts_en": [
+        "Tsk tsk tsk! Impressive, you! That Song level just now—your technique was simply superb!",
+        "Those joints closed seam-perfect, not a sliver of light slipping through! I thought you had only just recovered your touch and would stumble a couple of times. Who knew you'd be this quick-witted and deft, flying straight into it!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "咳……哪有你夸得那么神乎其神，纯粹是顺着那木料的榫口一点点摸索出来的，多花了些笨功夫罢了。",
+        "（上下打量了一圈，忍不住笑出声）不过……你这行头怎么又换了？上一关刚扮完摇折扇的宋代小文弱书生，这会儿怎么帽子一戴、弯刀一跨，改当塞外小游侠了？！"
+      ],
+      "texts_en": [
+        "Ahem... it was hardly as miraculous as you make it sound. I simply felt my way along the timber's joints, bit by bit—a little plodding effort, that's all.",
+        "(looking him over top to bottom, laughing despite myself) But... why have you changed your outfit again? Last level you were a frail Song scholar toying with a folding fan, and now—hat on your head, curved blade at your hip—you've turned some little frontier wanderer?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（右手潇洒地扶了扶腰间的弯刀刀柄，挺直腰板，故意粗着嗓子抱了抱拳）",
+        "咳咳！兀那汉子，休得无礼！某家此番乃是堂堂塞外壮士，安能与文弱书生相提并论？！",
+        "（立刻破功，噗嗤一笑）好啦好啦，不装了！如何？这顶大笠帽，还有腰间这把小弯刀，瞧着是不是威风凛凛、利落得很？",
+        "咱们此趟要去的可是元朝！大漠长风、万里纵横，要是还穿那身宽袍大袖摇扇子，马背上吹一阵风都得灌饱了。入乡随俗嘛，自然得换上这身干练飒爽的皮袍子，这才叫应景！"
+      ],
+      "texts_en": [
+        "(deftly steadying the hilt of the curved blade at his waist, squaring his back, cupping his fists in a deliberately gruff voice)",
+        "Ahem! You there, sir, no disrespect! This time I am a stalwart hero of the frontier—how could I be mentioned in the same breath as some frail bookish scholar?!",
+        "(the act collapsing at once into a snort of laughter) All right, all right, no more pretending! Well? This great bamboo hat, and this little curved blade at my waist—don't they look fearsome and sharp?",
+        "This trip we're headed for the Yuan dynasty! Desert winds, ten thousand miles of open range—if I still wore those wide sleeves and went on fanning, one gust on horseback would fill me like a wineskin. When in Rome, as they say—so of course I changed into this brisk, dashing fur-trimmed robe. Now that suits the scene!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "行，算你又赶上时髦了。那既然入了元朝……刚才经历了两关，我确实感觉握刀凿木的手感熟练平稳了许多，甚至能隐隐约约猜出构件的走向。",
+        "但是……脑海里总觉得还缺着好大一块拼图。这门手艺，我到底还要经历多少朝代，才能彻底唤醒、完全恢复？"
+      ],
+      "texts_en": [
+        "Fine, call it keeping up with fashion. And now that we've entered the Yuan... those last two levels truly left my hands steadier with blade and chisel—I can even vaguely sense where a member means to go.",
+        "But... it always feels like a great piece of the puzzle is still missing. How many more dynasties must I pass through before this craft wakes fully and I am completely restored?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "莫急莫急，快了快了！算上咱们眼下这趟元朝，再走一程大明，满打满算也就两回的功夫啦！",
+        "你现在觉得‘缺了一块’，那是再正常不过的——石器时代是‘根骨’，宋朝是‘法度’，但光懂规矩还成不了大匠。",
+        "这元朝的木构榫卯，最讲究‘不拘一格、粗中有细’！游牧的旷达之气融进了中原巧匠的骨血，他们敢大胆减柱、敢把弯木直接当作月梁，随木之本性施展拳脚。",
+        "等你在这大元王朝里，学会了这份‘顺应木性、大巧若拙’的豪迈魄力，你身上的榫卯气脉，可就彻底融会贯通大半了！"
+      ],
+      "texts_en": [
+        "No rush, no rush—it's nearly here! Counting this Yuan leg of ours, then one more through the great Ming, it's only two rounds of work in all!",
+        "That feeling of “a piece missing” is perfectly natural—the Stone Age gave you the root and bone, the Song gave you the law and measure, but rules alone do not make a grand master.",
+        "The Yuan wood-frame joinery prizes, above all, “no single mold, refinement within roughness”! The open boldness of the steppe poured into the blood of the Central Plains' clever craftsmen: they dared to drop columns outright, dared to take bent timber just as it came for moon-beams, working free with the wood's own nature.",
+        "Once you learn, here in the great Yuan, this bold spirit of “following the wood's nature, great skill wearing clumsy clothes,” the pulse of mortise-tenon in you will flow together and run clear, well past halfway whole!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "听你这么说，这元代的榫卯，倒真有几分塞外纵马、随性而为的野劲儿。"
+      ],
+      "texts_en": [
+        "The way you tell it, Yuan joinery really does carry a touch of that wild freedom—galloping beyond the passes, doing as the spirit moves."
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "那是自然！走走走，前面的马蹄声与风沙声可都近在耳畔了！",
+        "（潇洒地按了按帽檐）且看你这位未来的神工巧匠，能不能在这一马平川的元代大殿里，再显身手咯！咱们——入元！"
+      ],
+      "texts_en": [
+        "Naturally! Come, come—the hoofbeats and the singing sand are nearly at our ears!",
+        "(deftly tugging the brim of his hat) Let's see whether you, the future master craftsman, can show your mettle again in these broad, open halls of the Yuan! We—enter the Yuan!"
+      ]
+    }
+  ]
+}

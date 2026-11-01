@@ -1,0 +1,35 @@
+{
+  "_说明": [
+    "见证者点击气泡台词文件：格式=对象 {_说明, lines}，lines=字符串数组（句子池，句数不限）。",
+    "本文件为正式文案（用户提供，逐字保留）；播放与抽取器归 Y5 波（洗牌袋）。",
+    "英文字段（2026-11-01 增补）：可选「lines_en」（与 lines 逐条等长、按句一一对应）；lines_en 缺失或缺省时回退显示中文 lines，既有中文字段一律不动。"
+  ],
+  "lines": [
+    "别急。木头比人实在——你怎么待它，它就怎么待你。",
+    "手放稳些。你这一下，我瞧着，像。",
+    "试试锐眼。别死盯着看，先想它该往哪边让。",
+    "有没有想起点什么？一丝半缕，也算。",
+    "……是不是问得太急了。当我没说。",
+    "天赋这东西，越用越有。你接成一回，它就回来一分。",
+    "看腻我这身了？等确认了你是谁，随你怎么改。",
+    "我就在这儿，不催你。手酸了就歇歇。",
+    "此木之性，宜顺不宜逆——咳，当我没说。",
+    "七千年前的人，一根钉不用，就把屋子立在了水边。",
+    "接上一根是一根。急不来，也不必急。",
+    "方才那一下……你真没想起什么？罢了，逼你也没用"
+  ],
+  "lines_en": [
+    "No hurry. Wood is more honest than people—treat it well, and it treats you the same.",
+    "Steadier hands. That last move of yours—it looked right to me.",
+    "Try the Keen Eye. Don't stare it down—think first which way the wood would yield.",
+    "Has anything come back to you? Even the faintest thread counts.",
+    "...Was that asking too soon? Forget I said it.",
+    "Talent grows the more you use it. Every joint you close brings a piece of it back.",
+    "Tired of how I look? Once I've confirmed who you are, change me however you like.",
+    "I'm right here, no rush. Rest your hands whenever they ache.",
+    "This wood's nature favors going with the grain, not against it—ahem, never mind.",
+    "Seven thousand years ago, without a single nail, they raised houses beside the water.",
+    "One joint at a time. It can't be rushed, and there's no need to rush.",
+    "That move just now... nothing stirred in you? No matter—pressing won't help."
+  ]
+}

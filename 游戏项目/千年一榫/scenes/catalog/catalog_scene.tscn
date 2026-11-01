@@ -1,0 +1,241 @@
+[gd_scene load_steps=4 format=3 uid="uid://d16qblhanmda5"]
+
+[ext_resource type="Script" uid="uid://6xqxckfrv4d2" path="res://scenes/catalog/catalog_scene.gd" id="1_tavge"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/bg_menu.png" id="2_bg"]
+[ext_resource type="FontFile" path="res://fonts/MaShanZheng-Regular.ttf" id="3_msz"]
+
+[node name="Catalog" type="Control" unique_id=1818797631]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tavge")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Vignette" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TitleBar" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -260.0
+offset_bottom = 52.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="TitleBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_msz")
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+text = "图鉴"
+
+[node name="Body" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = -16.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="LeftInfo" type="PanelContainer" parent="Body" unique_id=385920609]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="Body/LeftInfo" unique_id=189973375]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RefFrame" type="PanelContainer" parent="Body/LeftInfo/VBox" unique_id=40324266]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RefImage" type="TextureRect" parent="Body/LeftInfo/VBox/RefFrame" unique_id=40324267]
+custom_minimum_size = Vector2(288, 220)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FourPoints" type="RichTextLabel" parent="Body/LeftInfo/VBox" unique_id=124515878]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+bbcode_enabled = true
+fit_content = true
+
+[node name="CenterMount" type="Control" parent="Body" unique_id=514664245]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="CenterPad" type="Panel" parent="Body/CenterMount" unique_id=514664246]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VideoPreview" type="VideoStreamPlayer" parent="Body/CenterMount" unique_id=514664247]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_right = 516.0
+offset_bottom = 290.0
+mouse_filter = 0
+expand = true
+
+[node name="ControlBar" type="PanelContainer" parent="Body/CenterMount/VideoPreview"]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -48.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BarRow" type="HBoxContainer" parent="Body/CenterMount/VideoPreview/ControlBar"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PlayPauseBtn" type="Button" parent="Body/CenterMount/VideoPreview/ControlBar/BarRow"]
+custom_minimum_size = Vector2(44, 32)
+layout_mode = 2
+tooltip_text = "播放"
+
+[node name="TimeSlider" type="HSlider" parent="Body/CenterMount/VideoPreview/ControlBar/BarRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="TimeLabel" type="Label" parent="Body/CenterMount/VideoPreview/ControlBar/BarRow"]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+horizontal_alignment = 1
+text = "00:00 / --:--"
+
+[node name="FullscreenBtn" type="Button" parent="Body/CenterMount/VideoPreview/ControlBar/BarRow"]
+custom_minimum_size = Vector2(44, 32)
+layout_mode = 2
+tooltip_text = "全屏"
+
+[node name="ShrinkBtn" type="Button" parent="Body/CenterMount/VideoPreview/ControlBar/BarRow"]
+visible = false
+custom_minimum_size = Vector2(44, 32)
+layout_mode = 2
+tooltip_text = "缩小"
+
+[node name="RightBox" type="PanelContainer" parent="Body" unique_id=1298755123]
+layout_mode = 2
+
+[node name="RightInner" type="VBoxContainer" parent="Body/RightBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="RightSpacer" type="Control" parent="Body/RightBox/RightInner"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RightToggle" type="Button" parent="Body/RightBox/RightInner"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "«"
+
+[node name="RightScroll" type="ScrollContainer" parent="Body/RightBox/RightInner" unique_id=2006645140]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="RightList" type="VBoxContainer" parent="Body/RightBox/RightInner/RightScroll" unique_id=217657919]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="VideoFullscreenLayer" type="CanvasLayer" parent="."]
+layer = 62
+visible = false
+
+[node name="FsRoot" type="Control" parent="VideoFullscreenLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="FsBlack" type="ColorRect" parent="VideoFullscreenLayer/FsRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BottomBar" type="HBoxContainer" parent="." unique_id=29256244]layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -356.0
+offset_top = -76.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 24
+alignment = 2
+
+[node name="EnterButton" type="Button" parent="BottomBar" unique_id=1776503256]
+custom_minimum_size = Vector2(160, 52)
+layout_mode = 2
+disabled = true
+text = "进入关卡"
+
+[node name="ExitButton" type="Button" parent="BottomBar" unique_id=1096060023]
+custom_minimum_size = Vector2(140, 52)
+layout_mode = 2
+text = "退出"
