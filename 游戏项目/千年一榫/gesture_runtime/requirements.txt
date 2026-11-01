@@ -1,0 +1,8 @@
+# 批次 R（spec §3.2）：实证可用的组合，== 精确锁死，禁止升级。
+# Python 解释器：3.13.14（实证同版本；打包由 gesture_runtime/python/ 嵌入式运行时提供，不入库）
+# 注：spec「opencv 5.0.0」在 PyPI 的实装包为 opencv-python-headless==5.0.0.93（cv2.__version__="5.0.0"；
+#     实证即此组合；opencv_contrib_python-5.0.0.93 为同版本线。
+#     游戏/服务端一律 headless 运行，GUI 函数仅存于非 headless 分支，headless 变体功能等价）。
+mediapipe==0.10.35
+opencv-python-headless==5.0.0.93
+numpy==2.5.1

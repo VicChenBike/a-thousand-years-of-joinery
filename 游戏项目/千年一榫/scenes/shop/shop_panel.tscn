@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://blocxnixui73g"]
+
+[ext_resource type="Script" uid="uid://crb8lb5nirep4" path="res://scenes/shop/shop_panel.gd" id="1_6nu21"]
+[ext_resource type="FontFile" path="res://fonts/MaShanZheng-Regular.ttf" id="3_msz"]
+
+[node name="Control" type="Control" unique_id=988650197]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6nu21")
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=1110511139]
+layout_mode = 0
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -128.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_constants/separation = 24
+
+[node name="BalanceLabel" type="Label" parent="TopBar" unique_id=672313885]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "天赋值：0"
+vertical_alignment = 1
+
+[node name="ExitButton" type="Button" parent="TopBar" unique_id=1706499770]
+custom_minimum_size = Vector2(140, 52)
+layout_mode = 2
+text = "退出"
+
+[node name="Content" type="HBoxContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 92.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="GridPanel" type="PanelContainer" parent="Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Content/GridPanel"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="SkinGrid" type="GridContainer" parent="Content/GridPanel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="DetailBox" type="PanelContainer" parent="Content"]
+layout_mode = 2
+custom_minimum_size = Vector2(320, 0)
+
+[node name="DetailInner" type="VBoxContainer" parent="Content/DetailBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="DetailTitle" type="Label" parent="Content/DetailBox/DetailInner"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_msz")
+theme_override_font_sizes/font_size = 24
+text = "神通谱"
+
+[node name="DetailScroll" type="ScrollContainer" parent="Content/DetailBox/DetailInner"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="DetailVBox" type="VBoxContainer" parent="Content/DetailBox/DetailInner/DetailScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/separation = 12
+
+[node name="DetailName" type="Label" parent="Content/DetailBox/DetailInner/DetailScroll/DetailVBox"]
+layout_mode = 2
+text = "——"
+
+[node name="DetailImage" type="TextureRect" parent="Content/DetailBox/DetailInner/DetailScroll/DetailVBox"]
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DetailDesc" type="Label" parent="Content/DetailBox/DetailInner/DetailScroll/DetailVBox"]
+layout_mode = 2
+autowrap_mode = 3
+text = "——"
+
+[node name="EffectRow" type="HBoxContainer" parent="Content/DetailBox/DetailInner"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="EffectPrefix" type="Label" parent="Content/DetailBox/DetailInner/EffectRow"]
+layout_mode = 2
+text = "效果："
+
+[node name="EffectValue" type="Label" parent="Content/DetailBox/DetailInner/EffectRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+text = "——"
+
+[node name="DetailBottom" type="HBoxContainer" parent="Content/DetailBox/DetailInner"]
+layout_mode = 2
+
+[node name="DetailPrice" type="Label" parent="Content/DetailBox/DetailInner/DetailBottom"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "价格：——"
+vertical_alignment = 1
+
+[node name="BuyButton" type="Button" parent="Content/DetailBox/DetailInner/DetailBottom"]
+custom_minimum_size = Vector2(120, 52)
+layout_mode = 2
+text = "购买"

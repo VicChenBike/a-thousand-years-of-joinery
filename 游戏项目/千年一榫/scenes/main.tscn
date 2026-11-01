@@ -1,0 +1,127 @@
+[gd_scene format=4 uid="uid://ctaa6ewfr5bef"]
+
+[ext_resource type="Script" uid="uid://dwvis33mcu5op" path="res://scenes/main.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://4m8ks5ee8jrv" path="res://scenes/shared/toast_center.gd" id="2_tc"]
+[ext_resource type="Shader" uid="uid://bado5dln28hu5" path="res://assets/shaders/hover_glow.gdshader" id="3_glow"]
+[ext_resource type="PackedScene" path="res://scenes/shared/window_buttons.tscn" id="4_wb"]
+[ext_resource type="Script" uid="uid://csygvet3h0hic" path="res://scenes/shared/rounded_frame.gd" id="7_rf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_glow"]
+shader = ExtResource("3_glow")
+shader_parameter/u_mouse_px = Vector2(-1, -1)
+shader_parameter/u_rects = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/u_rect_count = 0
+shader_parameter/u_rect_strength = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/u_fade_radius = 12.0
+shader_parameter/u_glow_radius_btn = 65.0
+shader_parameter/u_glow_radius_panel = 110.0
+shader_parameter/u_glow_k = 0.16
+shader_parameter/u_ellipses = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/u_mask_type = PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/u_glow_color = Vector3(1, 0.95, 0.8)
+shader_parameter/u_strength = 0.0
+
+[node name="Main" type="Control" unique_id=1763654634]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o5qli")
+
+[node name="SceneContainer" type="Control" parent="." unique_id=849013437]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GlobalUI" type="CanvasLayer" parent="." unique_id=500255728]
+
+[node name="ToastCenter" type="VBoxContainer" parent="GlobalUI" unique_id=1142674107]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -330.0
+offset_top = 66.0
+offset_right = -24.0
+offset_bottom = 430.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_constants/separation = 8
+script = ExtResource("2_tc")
+
+[node name="SettingsButton" type="Button" parent="GlobalUI" unique_id=671174375]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -132.0
+offset_top = 52.0
+offset_right = -24.0
+offset_bottom = 84.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+text = "设置"
+
+[node name="GlowLayer" type="CanvasLayer" parent="GlobalUI" unique_id=1999378785]
+layer = 100
+
+[node name="GlowRect" type="ColorRect" parent="GlobalUI/GlowLayer" unique_id=1857539851]
+visible = false
+material = SubResource("ShaderMaterial_glow")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowDragZone" type="Control" parent="GlobalUI" unique_id=186065425]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="WindowButtons" parent="GlobalUI" unique_id=1195343360 instance=ExtResource("4_wb")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -132.0
+offset_top = 12.0
+offset_right = -24.0
+offset_bottom = 44.0
+grow_horizontal = 0
+
+[node name="GestureLoadingTip" type="Label" parent="GlobalUI" unique_id=461163942]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -268.0
+offset_top = -122.0
+offset_right = -24.0
+offset_bottom = -90.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "手势交互加载中..."
+horizontal_alignment = 2
+
+[node name="GestureHUDLayer" type="CanvasLayer" parent="." unique_id=1763700586]
+layer = 64
+
+[node name="GestureHUDMount" type="Control" parent="GestureHUDLayer" unique_id=256957380]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RoundedFrame" type="CanvasLayer" parent="." unique_id=778001]
+layer = 128
+script = ExtResource("7_rf")

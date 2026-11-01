@@ -1,0 +1,44 @@
+{
+  "_说明": [
+    "见证者点击气泡台词文件：格式=对象 {_说明, lines}，lines=字符串数组（句子池，句数不限）。",
+    "第二关宋代语境：晷与主角相认后性格放开，俏皮灵动、偶带文绉绉雅趣；文本不绑定任何具体外貌与服饰，通用适配所有皮肤形象。",
+    "抽取与播放归 Y5 波（洗牌袋整轮不重复；池空/缺文件不弹+告警）。",
+    "英文字段（2026-11-01 增补）：可选「lines_en」（与 lines 逐条等长、按句一一对应）；lines_en 缺失或缺省时回退显示中文 lines，既有中文字段一律不动。"
+  ],
+  "lines": [
+    "看腻我现在这副模样了？衣橱就在边上，这回随你怎么换，可别挑花了眼哦。",
+    "宋人的木头，讲究‘三分规矩，七分风雅’。慢慢瞧，心急可磨不出严丝合缝的好榫卯。",
+    "使一使‘锐眼’嘛！瞧瞧哪儿该让、哪儿该合。别硬怼，木头也是有脾气和性子的。",
+    "啧，方才那一下削得真利落！我瞧着，当年的手艺至少找回来两成了。",
+    "子曰：‘工欲善其事……’哎呀，背这些酸文作甚！总之一回生二回熟，多试两次就合上了。",
+    "《营造法式》里规矩千万条，但早在几百年前，就全化作你骨子里的直觉了。信自己的手，错不了。",
+    "手酸了就歇会儿，我给你捶捶肩～不过，茶水可得你自己倒。",
+    "这宋代的构件，一层叠一层，叫斗栱。别看它玲珑小巧，整座大殿的万钧飞檐，全凭它稳稳托着呢。",
+    "怎么样，脑海里有没有浮现出点什么？是当年的雕梁画栋，还是咱们曾一起乘凉的飞檐？",
+    "榫卯相咬，阴阳互生，木石无言，千载不朽……咳咳，如何？我念得可有几分雅致气韵？",
+    "别光死盯着一个面看，把它转一转——你心里想它怎么转，它在掌心里就怎么动。",
+    "你琢磨榫卯归琢磨，刨花和木屑可别往我这边吹啊，咳咳……弄得我满身都是！",
+    "天赋值攒够了没？够了就去衣橱里多开几件新衣裳，我好几个模样可都眼巴巴盼着出来透气呢。",
+    "千年前的工匠一根铁钉都不用，就能起万丈高楼；你当年也是这般厉害，自然难不倒你！",
+    "别急嘛，木头有木头的规矩，慢慢琢磨，它自然会为你让出路来。",
+    "你尽管放手去试，错了大不了重来。有我在边上看着你呢，慌什么。"
+  ],
+  "lines_en": [
+    "Tired of this look of mine? The Wardrobe is right over there—this time, change me however you like. Just don't get lost choosing.",
+    "Song craftsmen held wood to “three parts rule, seven parts grace.” Take your time—impatience never polished a seam-perfect joint.",
+    "Give the Keen Eye a try! See where the wood should yield and where it should meet. Don't force it—wood has its temper too.",
+    "Tsk, that was a clean cut! By my eye, you've recovered at least a fifth of your old craft.",
+    "Confucius said: “If a workman would do his work well...”—oh, why recite musty classics! Bottom line: the first time is strange, the second familiar—try a couple more and it will fit.",
+    "The Yingzao Fashi holds a thousand rules, but centuries ago they all sank into your bones as instinct. Trust your own hands—they won't betray you.",
+    "Rest if your arms ache—I'll rub your shoulders~ Though the tea, you'll pour yourself.",
+    "This Song member, layer upon layer, is called dougong. Small and delicate as it looks, the whole hall's ten-thousand-weight flying eaves rest squarely upon it.",
+    "Well? Has anything surfaced in your mind? Carved beams and painted rafters of old—or the eaves we once sat beneath, enjoying the shade?",
+    "Tenon bites mortise, yin and yang beget each other; wood and stone keep silence, unfailing a thousand years... ahem. Well? Did I recite that with a proper air of elegance?",
+    "Don't fix your eyes on one face—turn it about. However you will it to turn in your mind, it moves so in your palm.",
+    "Ponder your joinery by all means, but keep the shavings and sawdust off me, cough, cough... I'm covered in it!",
+    "Saved up enough Talent yet? Then open a few more new outfits in the Wardrobe—several of my looks are longing to come out for a breath of air.",
+    "A thousand years ago, craftsmen raised towering halls without one iron nail; you were every bit as good back then—this won't stump you!",
+    "No hurry—wood has its own rules. Study it slowly, and it will make way for you.",
+    "Try as boldly as you like—if you err, you simply begin again. I'm right here watching you. What is there to fear?"
+  ]
+}

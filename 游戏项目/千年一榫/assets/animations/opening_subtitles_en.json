@@ -1,0 +1,36 @@
+{
+  "_说明": [
+    "开场动画英文字幕覆盖层数据：中文原文已烧录在视频画面内，英文由游戏在播放时实时渲染在中文下方空隙。",
+    "Opening movie English overlay: the Chinese lines are burned into the video; the English is rendered live by the game in the gap below them. Times are seconds, intervals are half-open [start, end), and each end is strictly less than the next start."
+  ],
+  "subtitles": [
+    { "start": 1.67, "end": 4.13, "en": "I keep feeling that I have lost something." },
+    { "start": 5.21, "end": 7.17, "en": "A memory that ought to have been mine." },
+    { "start": 8.63, "end": 10.75, "en": "A memory of a culture." },
+    { "start": 12.21, "end": 14.66, "en": "As if someone had drawn it away." },
+    { "start": 14.67, "end": 15.79, "en": "Why has it all gone dark?" },
+    { "start": 15.92, "end": 16.75, "en": "What is going on?" },
+    { "start": 16.83, "end": 18.16, "en": "At last, you begin to feel it." },
+    { "start": 18.17, "end": 19.08, "en": "Who are you?" },
+    { "start": 19.42, "end": 21.04, "en": "Who I am is of no importance." },
+    { "start": 21.38, "end": 23.63, "en": "What matters is what you have lost." },
+    { "start": 23.75, "end": 24.79, "en": "What have I lost?" },
+    { "start": 25.04, "end": 26.88, "en": "You have lost a fragment of memory." },
+    { "start": 27.21, "end": 28.88, "en": "A memory of wood." },
+    { "start": 31.38, "end": 32.91, "en": "But I remember nothing at all." },
+    { "start": 32.92, "end": 33.82, "en": "It is not that you do not remember." },
+    { "start": 33.83, "end": 35.38, "en": "It is that you have never lived it." },
+    { "start": 35.54, "end": 36.96, "en": "But your body remembers." },
+    { "start": 37.25, "end": 38.50, "en": "I am here to help you." },
+    { "start": 38.63, "end": 41.16, "en": "You are here to help me reclaim my memory." },
+    { "start": 41.17, "end": 42.17, "en": "Not to reclaim it." },
+    { "start": 42.33, "end": 44.79, "en": "But to lead you through it once again." },
+    { "start": 45.71, "end": 46.67, "en": "Follow me." },
+    { "start": 46.79, "end": 49.49, "en": "To lay your hands on wonders that span a thousand years." },
+    { "start": 49.50, "end": 50.70, "en": "And if I follow you?" },
+    { "start": 50.71, "end": 51.75, "en": "What will happen then?" },
+    { "start": 51.88, "end": 53.58, "en": "You will understand everything." },
+    { "start": 53.71, "end": 56.17, "en": "Including why it was I who came to find you." },
+    { "start": 56.71, "end": 57.96, "en": "Are you ready?" }
+  ]
+}

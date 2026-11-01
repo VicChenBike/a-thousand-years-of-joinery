@@ -1,0 +1,155 @@
+{
+  "_说明": [
+    "怎么填：本文件是 JSON 对象，只认两个键——「_说明」（加载器忽略的说明数组）与「rounds」（对话轮次数组）。",
+    "合法 speaker 只有两个：「晷」与「我」，其他值不识别（该轮会被跳过并告警）。",
+    "同一 speaker 连续多句=合并为一轮多 texts，玩家连点多次逐句走完再切下一角色；来回交替、长度不限。",
+    "本文件不控制立绘：对话立绘=晷，按关卡由游戏内常量映射定档，对话期间锁死。",
+    "示例一条：{\"speaker\":\"晷\",\"texts\":[\"到了再讲。\",\"远些，走得稳。\"]}",
+    "JSON 文件不得写注释（Godot 4.7 解析会失败），说明只能写在「_说明」里。",
+    "英文字段（2026-11-01 增补）：每轮可选「speaker_en」（\"Gui\"/\"I\"，与 speaker 一一对应）与「texts_en」（与 texts 逐句等长、按句一一对应）；英文字段缺失或缺省时回退显示中文 speaker/texts，既有中文字段一律不动。"
+  ],
+  "rounds": [
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（左手抱着木料，右手拎着刨刀，眼里闪烁着抑制不住的光芒）",
+        "恭喜你！大功告成！——方才大明那一程，你不仅完美咬合了所有榫卯，更彻底唤醒了沉睡在神魂深处的全部实力！",
+        "怎么样，感觉到了吧？现在的你，心念一动，木构脉络便尽收眼底——从这一关起，你的「锐眼」已经彻底大成，再也不会耗费你半分天赋值与力气了！"
+      ],
+      "texts_en": [
+        "(cradling timber in one arm, plane knife in hand, eyes flashing with irrepressible light)",
+        "Congratulations! It is accomplished!—On that Ming leg, you not only closed every mortise and tenon to perfection, you fully woke all the strength that slept in the depths of your soul!",
+        "How about it—you feel it, don't you? Now, at a single stir of thought, the whole grain of a wooden structure lies open before your eyes—from this level on, your Keen Eye is fully mastered, and it will never again cost you a grain of Talent or strength!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "确实……刚才合上大明最后一榫的那一刻，掌心里像是有股暖流彻底贯通了周身，眼前的木料仿佛都有了呼吸一般。",
+        "（低头看了看四周，又看了看眼前的晷）不过……这满屋子的现代机床、设计图纸，还有你身上这身牛仔工装围裙、腰间挂着的卷尺凿子……咱们这是，终于穿梭回到现代了？"
+      ],
+      "texts_en": [
+        "I do... at the moment I closed that last Ming tenon, a warm current seemed to run clean through me, and the timber before my eyes felt as if it were breathing.",
+        "(looking around, then at the Gui before me) But... a room full of modern machines and drafting sheets, and you in that denim work apron, tape measure and chisels at your belt... Have we finally crossed back into the present day?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "回到了现代，也到了……这趟旅途的最后一站。",
+        "（目光微微低垂，语气少见地温柔沉静下来，轻抚着手里的原木料）"
+      ],
+      "texts_en": [
+        "Back to the present—and to the last stop... of this journey.",
+        "(gaze drifting low, a rare gentleness settling into the quiet voice, softly stroking the raw timber)"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "最后一站？等等，既然我已经完全恢复了实力，那你之前提到的‘意外’和‘大秘密’呢？我当年为什么会失忆？到底是谁把我害成这样的？！"
+      ],
+      "texts_en": [
+        "The last stop? Wait—if my strength is fully restored, what about that “accident” and “great secret” you mentioned? Why did I lose my memory back then? Who on earth did this to me?!"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（苦笑了一下，指尖轻轻抵住胸口，那里泛起微弱的金色锁链光纹）",
+        "不是我不想说，是我……根本说不出口。我的神魂深处，被种下了极严苛的因果禁制。",
+        "我只能告诉你：你丢失记忆、流落在此，绝非天灾，而是人祸！在幽暗的时空裂隙背后，横亘着比这千百道榫卯复杂千万倍的弥天大网，以及一个手段通天、潜藏在暗处的真正幕后黑手。",
+        "在未来，还有远比这几道关卡凶险百倍的难关在等着你，更有你在漫长岁月里拼上性命也想守护、想拯救的人！"
+      ],
+      "texts_en": [
+        "(a wry smile; fingertips resting lightly on the chest, where a faint golden chain-light shimmers)",
+        "It is not that I will not speak—it is that I... cannot speak it at all. Deep in my soul, a binding of cause and effect has been planted, severe beyond measure.",
+        "All I can tell you is this: that you lost your memory and drifted here was never calamity of heaven—it was the work of human hands! Behind the dark fissures of time and space stretches a net a millionfold more tangled than these thousand joints, and a true hand behind it all, mighty beyond telling, hidden in the dark.",
+        "In the future, ordeals a hundredfold more perilous than these levels are waiting for you—and people you will spend lifetimes wanting to protect, wanting to save!"
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……幕后黑手？需要我去拯救的人？！那我现在的记忆和实力，难道不是为了……"
+      ],
+      "texts_en": [
+        "...A hand behind it all? People I need to save?! Then my memory and strength now—are they not meant for..."
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "我的任务，仅仅是把你平安送到这里，带你找回这门足以立定乾坤的传承本领。",
+        "实话再跟你交个底吧——派我跨越时空而来的，并不是你以为的那个‘未来的你’，而是……‘现在的你的未来的未来’。",
+        "每一次穿梭，你在时空长河中苏醒的地点与时间点，其实全都混沌未定、随机散落。好在我的灵光与你的神魂同源，不管你落在哪个角落，我总有办法找到你。",
+        "……而对于你来说，这不过是刚刚认识我的第一程旅途；可你知道么？在无尽的时间闭环里，这已经是我陪你走过的，第九十九程了。"
+      ],
+      "texts_en": [
+        "My task was only to bring you safely here, and to help you reclaim this heritage-craft, strong enough to steady heaven and earth.",
+        "And let me be honest with you once more—the one who sent me across time is not that “future you” you imagined, but... “the future of your future, counting from now.”",
+        "Each crossing, the place and the moment where you wake in the long river of time are in truth unsettled, scattered at random. Luckily my light and your soul spring from the same source—wherever you land, whatever the corner, I can always find a way to you.",
+        "...And for you, this is only the first leg since we met. But do you know? In the endless closed loop of time, this is already the ninety-ninth journey I have walked at your side."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "（心头剧震）第……九十九程？！那你在这之后……"
+      ],
+      "texts_en": [
+        "(a violent jolt through the heart) The... ninety-ninth?! Then after this, you—"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "等这一关彻底合榫、等你跨过这道现代的门槛，我的使命便算完成了。",
+        "为了维持时间的闭环，我必须立刻启程逆流而回，回到浩瀚的岁月中，去寻找下一个刚刚苏醒、一无所知的‘过去的主角’。",
+        "这便是宿命，也是唯有如此才能打破幕后黑手封锁的唯一生机。"
+      ],
+      "texts_en": [
+        "When this level closes its last joint, when you step across this threshold of the present, my mission will be complete.",
+        "To hold the loop of time intact, I must set out at once, back against the current, into the vast years, to find the next “hero of the past”—newly awake, knowing nothing.",
+        "Such is fate—and the only thread of life that can break the blockade of the hand behind it all."
+      ]
+    },
+    {
+      "speaker": "我",
+      "speaker_en": "I",
+      "texts": [
+        "……既然如此，这一关若是拼完了，我们岂不是立刻就要道别了？"
+      ],
+      "texts_en": [
+        "...If that is so, then the moment this level is done, we must bid farewell at once?"
+      ]
+    },
+    {
+      "speaker": "晷",
+      "speaker_en": "Gui",
+      "texts": [
+        "（忽然抬起头，像以往那样扬起灿烂的笑脸，掂了掂手里的木工刨）",
+        "哎呀！干嘛摆出这副生离死别的难看表情嘛！",
+        "前路漫漫，但眼下——这最后一程还没到站呢！至少在这第五关里，本仙官依然会像从前一样，寸步不离地在边上看着你、陪着你！",
+        "拿出你七千年千锤百炼的神通手艺，把现代这一件登峰造极的乾坤之作，堂堂正正拼完给天下人瞧瞧！",
+        "来吧，我的大工匠——咱们，入关！"
+      ],
+      "texts_en": [
+        "(suddenly looking up, breaking into that same radiant smile, giving the hand plane a little toss)",
+        "Oh come now! Why make that dreadful face, like some parting for good?!",
+        "The road ahead is long, but right now—this final leg has not reached its stop yet! Here in Level 5, this immortal official will stay beside you as ever, never a step away, watching over you!",
+        "Bring out that craft of yours, hammer-forged through seven thousand years, and finish this modern-day masterpiece—a work to crown the world—proudly, for all under heaven to see!",
+        "Come, my master builder—we enter the final level!"
+      ]
+    }
+  ]
+}

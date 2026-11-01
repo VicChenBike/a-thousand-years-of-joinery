@@ -1,0 +1,44 @@
+{
+  "_说明": [
+    "见证者点击气泡台词文件：格式=对象 {_说明, lines}，lines=字符串数组（句子池，句数不限）。",
+    "第四关明代语境：文本不绑定任何具体外貌与服饰，通用适配所有皮肤形象；性格活泼机灵、略带傲娇，融入大明‘极致精密、暗藏机关、大匠集大成’的榫卯巅峰与主线终局期待。",
+    "抽取与播放归 Y5 波（洗牌袋整轮不重复；池空/缺文件不弹+告警）。",
+    "英文字段（2026-11-01 增补）：可选「lines_en」（与 lines 逐条等长、按句一一对应）；lines_en 缺失或缺省时回退显示中文 lines，既有中文字段一律不动。"
+  ],
+  "lines": [
+    "大明的榫卯，看似表面平平无奇，里头可藏着千百道暗扣呢，可别被它的外表给骗了！",
+    "‘锐眼’在这个时候最好使了！里头看不见的暗榫交错，全凭它给你照出一条明路来。",
+    "心浮气躁可磨不出大明的物件！深吸一口气，把心沉下去，手上的准头才出得来。",
+    "瞧瞧这线脚，再瞧瞧这交圈！严丝合缝得连张薄纸都塞不进去，这才叫绝活！",
+    "衣橱就在旁边呢，若是觉得手风不顺，不如换身新装扮转转运？",
+    "天赋值攒得可还称心？这一趟大明走完，保准让你收获满满！",
+    "别光顾着盯一处瞧，多转一转！大明的工匠最擅长‘面面俱到’，哪个角都得交代得明明白白。",
+    "哎呀……刚才在穿梭路上漏听的那句叮嘱，到底是什么来着？唔……算了不想了，脑壳疼！",
+    "加把劲！只要顺顺当当拿下这一关，你当年的通天本事可就彻底大功告成啦！",
+    "不管是紫禁城的大殿，还是文人案头的花梨木圈椅，底子全在一榫一卯的寸劲里。",
+    "累了就歇会儿，我不催你。当年这般复杂的暗榫，巧匠们琢磨好几个月也是常有的事。",
+    "啧啧，刚才下刀这一下，真有点‘神工意匠’的大家风范了！我果然没找错人！",
+    "阴阳相济，暗扣横生。把该嵌的格块嵌进去，它自然会给你回一声脆响！",
+    "别慌，榫口既然造出来了，就必定有它咬合的解法。静下心，慢慢试！",
+    "一根钉子不用，却能立起天下至巧的大器，这份手艺，无论走过多远岁月都是奇迹！",
+    "我就在旁边给你把关呢，放手去拼吧，胜利可就在眼前咯！"
+  ],
+  "lines_en": [
+    "Ming joinery looks plain as plain on the surface, but inside hide a hundred hidden clasps—don't let its face fool you!",
+    "This is where the Keen Eye works best! The unseen crossing of hidden tenons—it alone will light you a bright way through.",
+    "A restless heart never produces a Ming piece! Take a deep breath, let the mind sink down—only then will the hands find their true aim.",
+    "Look at this molding, then at this meeting of lines! Seam-tight enough to turn away a sheet of thin paper—now that is mastery!",
+    "The Wardrobe is just there—if your luck feels stuck, why not a new outfit to turn it around?",
+    "Is the Talent adding up nicely? Finish this Ming leg, and your haul is sure to be full!",
+    "Don't fixate on one spot—turn it about more! Ming craftsmen excelled at “covering every face”: every corner accounted for, clear and complete.",
+    "Oh... that instruction I failed to catch on the road between times—what was it again? Mm... forget it, my head aches!",
+    "Push on! Take this level cleanly, and your old heaven-reaching craft will be complete at last!",
+    "From the halls of the Forbidden City to the rosewood round-backed chair on a scholar's desk, the foundation lies in the inch-wise bite of tenon and mortise.",
+    "Rest a while if you're tired; I won't rush you. Back then, hidden tenons this intricate often kept clever craftsmen pondering for months.",
+    "Tsk tsk—that cut just now had the true air of a “divine craftsman”! I picked the right person after all!",
+    "Yin and yang in balance, hidden clasps in profusion. Set the right block into its place, and it will answer you with a crisp ring!",
+    "Don't panic—if the joint was made, a way to close it surely exists. Settle your heart, and try slowly!",
+    "Not one nail, yet raising the most ingenious vessels under heaven—however far the years have carried it, this craft is a miracle!",
+    "I'm right here checking your work—go all in! Victory is just before your eyes!"
+  ]
+}

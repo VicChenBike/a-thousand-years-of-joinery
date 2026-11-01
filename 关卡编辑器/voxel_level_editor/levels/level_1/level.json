@@ -1,0 +1,11 @@
+{
+  "format_version": 1,
+  "level_id": "chapter1_editor",
+  "chapter": 1,
+  "title": "第一关",
+  "era": "新石器时代",
+  "theme": "wood",
+  "description": "河姆渡遗址榫卯木构件示意：在实心木料上挖出带榫头的梁，与带卯眼的固定件对接，感受七千年前的榫卯智慧。",
+  "anim_time": 100,
+  "grid_size_unused": 0
+}

@@ -1,0 +1,238 @@
+[gd_scene load_steps=4 format=3 uid="uid://byyxc8eoftalf"]
+
+[ext_resource type="Script" path="res://scenes/settings/settings_panel.gd" id="1_settings"]
+[ext_resource type="FontFile" path="res://fonts/MaShanZheng-Regular.ttf" id="4_msz"]
+[ext_resource type="Script" path="res://scenes/settings/camera_menu.gd" id="5_cammenu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings")
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.35)
+
+[node name="Panel" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(460, 560)
+layout_mode = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_msz")
+theme_override_font_sizes/font_size = 28
+text = "设置"
+horizontal_alignment = 1
+
+[node name="EntryBox" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="CatalogEntry" type="Button" parent="Panel/VBox/EntryBox"]
+custom_minimum_size = Vector2(140, 48)
+layout_mode = 2
+text = "图鉴"
+
+[node name="ShopEntry" type="Button" parent="Panel/VBox/EntryBox"]
+custom_minimum_size = Vector2(140, 48)
+layout_mode = 2
+text = "衣橱"
+
+[node name="OptionsBox" type="VBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="GestureToggle" type="Button" parent="Panel/VBox/OptionsBox"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "手势交互 (Beta)"
+
+[node name="CameraRow" type="HBoxContainer" parent="Panel/VBox/OptionsBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="LLine" type="Control" parent="Panel/VBox/OptionsBox/CameraRow"]
+custom_minimum_size = Vector2(32, 16)
+mouse_filter = 2
+
+[node name="VLine" type="ColorRect" parent="Panel/VBox/OptionsBox/CameraRow/LLine"]
+offset_right = 2.0
+offset_bottom = 14.0
+mouse_filter = 2
+color = Color(1, 0.922, 0.706, 0.35)
+
+[node name="HSeg" type="ColorRect" parent="Panel/VBox/OptionsBox/CameraRow/LLine"]
+offset_left = 2.0
+offset_top = 14.0
+offset_right = 32.0
+offset_bottom = 16.0
+mouse_filter = 2
+color = Color(1, 0.922, 0.706, 0.35)
+
+[node name="CameraToggle" type="Button" parent="Panel/VBox/OptionsBox/CameraRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_pressed = true
+text = "摄像头"
+
+[node name="ArrowBtn" type="Button" parent="Panel/VBox/OptionsBox/CameraRow"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+text = "▾"
+tooltip_text = "摄像头选项"
+
+[node name="HudToggle" type="Button" parent="Panel/VBox/OptionsBox"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "显示手势状态区"
+
+[node name="FullscreenToggle" type="Button" parent="Panel/VBox/OptionsBox"]
+layout_mode = 2
+toggle_mode = true
+text = "全屏显示"
+
+[node name="LanguageRow" type="HBoxContainer" parent="Panel/VBox/OptionsBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LanguageLabel" type="Label" parent="Panel/VBox/OptionsBox/LanguageRow"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Language"
+
+[node name="LanguageOption" type="OptionButton" parent="Panel/VBox/OptionsBox/LanguageRow"]
+layout_mode = 2
+size_flags_vertical = 4
+item_count = 2
+popup/item_0/text = "简体中文"
+popup/item_1/text = "English"
+popup/item_1/id = 1
+
+[node name="VolumeGrid" type="GridContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="MasterBox" type="HBoxContainer" parent="Panel/VBox/VolumeGrid"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Name" type="Label" parent="Panel/VBox/VolumeGrid/MasterBox"]
+layout_mode = 2
+text = "总音量"
+
+[node name="Slider" type="HSlider" parent="Panel/VBox/VolumeGrid/MasterBox"]
+custom_minimum_size = Vector2(150, 24)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Value" type="Label" parent="Panel/VBox/VolumeGrid/MasterBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+size_flags_vertical = 4
+text = "100%"
+
+[node name="MusicBox" type="HBoxContainer" parent="Panel/VBox/VolumeGrid"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Name" type="Label" parent="Panel/VBox/VolumeGrid/MusicBox"]
+layout_mode = 2
+text = "音乐"
+
+[node name="Slider" type="HSlider" parent="Panel/VBox/VolumeGrid/MusicBox"]
+custom_minimum_size = Vector2(150, 24)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Value" type="Label" parent="Panel/VBox/VolumeGrid/MusicBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+size_flags_vertical = 4
+text = "100%"
+
+[node name="SfxBox" type="HBoxContainer" parent="Panel/VBox/VolumeGrid"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Name" type="Label" parent="Panel/VBox/VolumeGrid/SfxBox"]
+layout_mode = 2
+text = "音效"
+
+[node name="Slider" type="HSlider" parent="Panel/VBox/VolumeGrid/SfxBox"]
+custom_minimum_size = Vector2(150, 24)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Value" type="Label" parent="Panel/VBox/VolumeGrid/SfxBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+size_flags_vertical = 4
+text = "100%"
+
+[node name="GridSpacer" type="Control" parent="Panel/VBox/VolumeGrid"]
+layout_mode = 2
+
+[node name="WarningLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.25, 0.2, 1)
+horizontal_alignment = 1
+
+[node name="ButtonBox" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="CloseButton" type="Button" parent="Panel/VBox/ButtonBox"]
+layout_mode = 2
+text = "关闭"
+
+; 批次 U（U2-2，双审 P1-1）：下拉宿主迁独立 CanvasLayer layer=65（高于 HUD 64 与 GlobalUI 内设置面板——
+; 原嵌入式 PopupPanel「树序在面板之后即高于面板」口径作废，实证下拉 807..1087 与 SETTINGS 说明栏
+; 914..1138/y 233..293 矩形相交）；子菜单随宿主同层。
+[node name="CameraMenuLayer" type="CanvasLayer" parent="."]
+layer = 65
+
+[node name="CameraMenuPopup" type="PopupPanel" parent="CameraMenuLayer"]
+size = Vector2i(280, 0)
+
+[node name="CameraMenu" type="PanelContainer" parent="CameraMenuLayer/CameraMenuPopup"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+script = ExtResource("5_cammenu")

@@ -1,0 +1,102 @@
+{
+  "format_version": 1,
+  "level_id": "chapter9_two_pieces",
+  "chapter": 2,
+  "title": "双件透传夹具",
+  "era": "宋",
+  "theme": "wood",
+  "description": "编辑器透传测试夹具（pieces[1] 原样保留）",
+  "anim_time": 100,
+  "grid_size_unused": 0,
+  "pieces": [
+    {
+      "piece_id": "p1",
+      "name": "主体",
+      "block_size": {
+        "x": 2,
+        "y": 2,
+        "z": 2
+      },
+      "initial_voxels": true,
+      "blocks": [
+        "0,0,0",
+        "1,0,0",
+        "0,1,0",
+        "1,1,0",
+        "0,0,1",
+        "1,0,1",
+        "0,1,1",
+        "1,1,1"
+      ],
+      "target_shapes": [
+        [
+          "0,0,0"
+        ]
+      ],
+      "join_part": {
+        "size": {
+          "x": 2,
+          "y": 2,
+          "z": 2
+        },
+        "voxels": [
+          "1,1,1"
+        ]
+      },
+      "final_answer": {
+        "size": {
+          "x": 2,
+          "y": 2,
+          "z": 2
+        },
+        "voxels": [
+          "0,0,0",
+          "1,1,1"
+        ]
+      },
+      "match_offset": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "piece_id": "p2",
+      "name": "透传件",
+      "block_size": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "initial_voxels": true,
+      "blocks": [
+        "0,0,0"
+      ],
+      "target_shapes": [
+        [
+          "0,0,0"
+        ]
+      ],
+      "join_part": {
+        "size": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "voxels": [
+          "0,0,0"
+        ]
+      },
+      "final_answer": {
+        "size": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "voxels": [
+          "0,0,0"
+        ]
+      }
+    }
+  ]
+}

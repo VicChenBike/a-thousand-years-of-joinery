@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- 千年一榫 图标：榫卯结构示意（深棕底 + 深黄榫头咬合） -->
+  <rect x="0" y="0" width="128" height="128" rx="20" fill="#1A1208"/>
+  <!-- 左构件（带榫头） -->
+  <path d="M12 34 H52 V22 H76 V50 H52 V38 H12 Z" fill="#C9A227"/>
+  <!-- 右构件（带卯口） -->
+  <path d="M116 78 H76 V66 H52 V94 H76 V82 H116 Z" fill="#8C6A1D"/>
+  <!-- 中缝高光 -->
+  <rect x="60" y="20" width="4" height="88" fill="#F2E8D5" opacity="0.35"/>
+</svg>

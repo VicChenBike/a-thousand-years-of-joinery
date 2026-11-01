@@ -1,0 +1,9 @@
+{
+  "dialog_id": "fixture_sample",
+  "_note": "合成测试数据（非剧情台词，铁律 8 不适用）；Y4 新格式契约（批次 Y spec §9.1 Y-B2）：rounds=[{speaker,texts}]，speaker 覆盖「晷」「我」双名牌集合（K5-2 互斥切换；批次 Y 角色改名「见证者」→「晷」同步）。",
+  "rounds": [
+    { "speaker": "晷", "texts": ["这是打字机测试的第一句台词，长度足够覆盖逐字检查。"] },
+    { "speaker": "我", "texts": ["第二句台词：验证快进与推进。"] },
+    { "speaker": "晷", "texts": ["第三句台词：结束后路由。"] }
+  ]
+}

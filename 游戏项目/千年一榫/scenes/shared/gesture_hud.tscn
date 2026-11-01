@@ -1,0 +1,139 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/shared/gesture_hud.gd" id="1_gesture_hud"]
+
+[node name="GestureHUD" type="Control"]
+mouse_filter = 2
+script = ExtResource("1_gesture_hud")
+
+[node name="CameraWindow" type="TextureRect" parent="."]
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CameraBg" type="ColorRect" parent="CameraWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.10, 0.07, 0.04, 0.85)
+
+[node name="CameraHint" type="Label" parent="CameraWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "摄像头启动中…"
+
+[node name="StatusRow" type="VBoxContainer" parent="."]
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="LeftPanel" type="Panel" parent="StatusRow"]
+custom_minimum_size = Vector2(96, 86)
+mouse_filter = 2
+
+[node name="VBox" type="VBoxContainer" parent="StatusRow/LeftPanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="LeftTag" type="Label" parent="StatusRow/LeftPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "左手"
+
+[node name="LeftLabel" type="Label" parent="StatusRow/LeftPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "未检出"
+
+[node name="LeftConf" type="Label" parent="StatusRow/LeftPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "未检出"
+
+[node name="RightPanel" type="Panel" parent="StatusRow"]
+custom_minimum_size = Vector2(96, 86)
+mouse_filter = 2
+
+[node name="VBox" type="VBoxContainer" parent="StatusRow/RightPanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="RightTag" type="Label" parent="StatusRow/RightPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "右手"
+
+[node name="RightLabel" type="Label" parent="StatusRow/RightPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "未检出"
+
+[node name="RightConf" type="Label" parent="StatusRow/RightPanel/VBox"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "未检出"
+
+[node name="StatusPanel" type="PanelContainer" parent="."]
+mouse_filter = 2
+
+[node name="StatusLineBox" type="HBoxContainer" parent="StatusPanel"]
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="StatusLine" type="Label" parent="StatusPanel/StatusLineBox"]
+mouse_filter = 2
+custom_minimum_size = Vector2(0, 24)
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 13
+clip_text = true
+text = "左 未检出 ｜ 右 未检出"
+
+[node name="GuidePanel" type="PanelContainer" parent="."]
+mouse_filter = 2
+
+[node name="GuideVBox" type="VBoxContainer" parent="GuidePanel"]
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="GuideHeader" type="HBoxContainer" parent="GuidePanel/GuideVBox"]
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="FoldBtn" type="Button" parent="GuidePanel/GuideVBox/GuideHeader"]
+custom_minimum_size = Vector2(28, 28)
+mouse_filter = 0
+text = "▼"
+
+[node name="GuideTitle" type="Label" parent="GuidePanel/GuideVBox/GuideHeader"]
+mouse_filter = 2
+theme_override_font_sizes/font_size = 13
+text = "手势说明"
+
+[node name="GuideList" type="GridContainer" parent="GuidePanel/GuideVBox"]
+mouse_filter = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 0
+columns = 1
+
+[node name="HintFoldBtn" type="Button" parent="."]
+custom_minimum_size = Vector2(20, 20)
+mouse_filter = 0
+text = "▼"

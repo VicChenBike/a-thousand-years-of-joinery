@@ -1,0 +1,324 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scenes/level/level_scene.gd" id="1_lvl"]
+[ext_resource type="Script" path="res://scripts/level_voxel_view.gd" id="2_vox"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/bg_chapter1.png" id="3_bg"]
+[ext_resource type="Texture2D" path="res://assets/characters/default_witness.png" id="4_wit"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trans"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Environment" id="Env_amb"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 0.95, 0.85, 1)
+ambient_light_energy = 0.7
+
+[node name="Level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lvl")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Vignette" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+; 批次 U（U10）：offset_right=−132 维持（设置钮回位后窗相对左缘 W−124，间隙 18px；test_t_dock_expand 断言锁死）
+[node name="TopBar" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -132.0
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_constants/separation = 12
+
+[node name="TitleLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text_overrun_behavior = 3
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+text = "第1关"
+vertical_alignment = 1
+
+[node name="TalentLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+text = "天赋值：0"
+vertical_alignment = 1
+
+[node name="TimerLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+text = "00:00"
+vertical_alignment = 1
+
+[node name="VoxelLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.0
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+text = "剩余体素：0 / 0"
+vertical_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 10
+
+[node name="EyeButton" type="Button" parent="TopBar/Buttons"]
+custom_minimum_size = Vector2(96, 44)
+layout_mode = 2
+text = "锐眼"
+
+[node name="JoinButton" type="Button" parent="TopBar/Buttons"]
+custom_minimum_size = Vector2(150, 52)
+layout_mode = 2
+text = "对接"
+
+[node name="FocusButton" type="Button" parent="TopBar/Buttons"]
+custom_minimum_size = Vector2(96, 44)
+layout_mode = 2
+text = "聚焦"
+
+[node name="ExitButton" type="Button" parent="TopBar/Buttons"]
+custom_minimum_size = Vector2(96, 44)
+layout_mode = 2
+text = "退出"
+
+[node name="TargetView" type="Panel" parent="."]
+layout_mode = 1
+anchor_left = 0.0104167
+anchor_top = 0.0987654
+anchor_right = 0.4618056
+anchor_bottom = 0.4104938
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trans")
+
+[node name="ViewportContainer" type="SubViewportContainer" parent="TargetView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="TargetView/ViewportContainer"]
+transparent_bg = true
+own_world_3d = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="TargetView/ViewportContainer/SubViewport"]
+environment = SubResource("Env_amb")
+
+[node name="FillLight" type="DirectionalLight3D" parent="TargetView/ViewportContainer/SubViewport"]
+rotation = Vector3(0.8726646, 2.6179939, 0)
+light_energy = 0.4
+
+[node name="Camera3D" type="Camera3D" parent="TargetView/ViewportContainer/SubViewport"]
+projection = 1
+near = 0.1
+far = 100.0
+
+[node name="VoxelView" type="Node3D" parent="TargetView/ViewportContainer/SubViewport"]
+script = ExtResource("2_vox")
+
+[node name="Title" type="Label" parent="TargetView"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 212.0
+offset_bottom = 32.0
+grow_horizontal = 1
+grow_vertical = 1
+theme_override_colors/font_color = Color(0.95, 0.93, 0.84, 0.82)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.55)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "最终成品"
+horizontal_alignment = 0
+
+[node name="JoinView" type="Panel" parent="."]
+layout_mode = 1
+anchor_left = 0.5381944
+anchor_top = 0.0987654
+anchor_right = 0.9895833
+anchor_bottom = 0.4104938
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trans")
+
+[node name="ViewportContainer" type="SubViewportContainer" parent="JoinView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="JoinView/ViewportContainer"]
+transparent_bg = true
+own_world_3d = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="JoinView/ViewportContainer/SubViewport"]
+environment = SubResource("Env_amb")
+
+[node name="FillLight" type="DirectionalLight3D" parent="JoinView/ViewportContainer/SubViewport"]
+rotation = Vector3(0.8726646, 2.6179939, 0)
+light_energy = 0.4
+
+[node name="Camera3D" type="Camera3D" parent="JoinView/ViewportContainer/SubViewport"]
+projection = 1
+near = 0.1
+far = 100.0
+
+[node name="VoxelView" type="Node3D" parent="JoinView/ViewportContainer/SubViewport"]
+script = ExtResource("2_vox")
+
+[node name="Title" type="Label" parent="JoinView"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 212.0
+offset_bottom = 32.0
+grow_horizontal = 1
+grow_vertical = 1
+theme_override_colors/font_color = Color(0.95, 0.93, 0.84, 0.82)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.55)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "对接固定件"
+horizontal_alignment = 0
+
+[node name="MainView" type="Panel" parent="."]
+layout_mode = 1
+anchor_left = 0.115
+anchor_top = 0.4166667
+anchor_right = 0.9600694
+anchor_bottom = 0.9506173
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trans")
+
+[node name="ViewportContainer" type="SubViewportContainer" parent="MainView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MainView/ViewportContainer"]
+transparent_bg = true
+own_world_3d = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="MainView/ViewportContainer/SubViewport"]
+environment = SubResource("Env_amb")
+
+[node name="FillLight" type="DirectionalLight3D" parent="MainView/ViewportContainer/SubViewport"]
+rotation = Vector3(0.8726646, 2.6179939, 0)
+light_energy = 0.4
+
+[node name="Camera3D" type="Camera3D" parent="MainView/ViewportContainer/SubViewport"]
+projection = 1
+near = 0.1
+far = 100.0
+
+[node name="VoxelView" type="Node3D" parent="MainView/ViewportContainer/SubViewport"]
+script = ExtResource("2_vox")
+
+[node name="HintLabel" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.06
+anchor_top = 0.9583333
+anchor_right = 0.94
+anchor_bottom = 1.0
+offset_bottom = -2.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.7)
+theme_override_constants/outline_size = 4
+text = "提示：按住左键划动选中体素，右键删除"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WitnessPortrait" type="TextureRect" parent="."]
+layout_mode = 1
+anchor_left = 0.005
+anchor_top = 0.72
+anchor_right = 0.11
+anchor_bottom = 1.0
+mouse_filter = 0
+texture = ExtResource("4_wit")
+expand_mode = 1
+stretch_mode = 5
+metadata/interactive = true
+
+[node name="ExitReplayButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchor_left = 0.005
+anchor_top = 0.655
+anchor_right = 0.115
+anchor_bottom = 0.705
+text = "退出"
+
+[node name="WitnessBubble" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchor_left = 0.005
+anchor_top = 0.0
+anchor_right = 0.26
+anchor_bottom = 0.0
+offset_top = 353.16
+offset_bottom = 393.16
+mouse_filter = 2
+text = "……"
+horizontal_alignment = 1
+vertical_alignment = 1

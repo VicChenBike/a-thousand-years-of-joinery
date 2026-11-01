@@ -1,0 +1,12 @@
+{
+  "format_version": 1,
+  "level_id": "chapter1_hemudu",
+  "chapter": 1,
+  "title": "河姆渡榫卯木构件",
+  "era": "新石器时代",
+  "theme": "wood",
+  "description": "占位测试关卡（pieces 空用例）",
+  "anim_time": 100,
+  "grid_size_unused": 0,
+  "pieces": []
+}

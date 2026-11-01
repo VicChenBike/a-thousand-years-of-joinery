@@ -1,0 +1,44 @@
+{
+  "_说明": [
+    "见证者点击气泡台词文件：格式=对象 {_说明, lines}，lines=字符串数组（句子池，句数不限）。",
+    "第五关现代终局语境：文本不绑定任何具体外貌与服饰，通用适配所有皮肤形象；调性温柔坚定，安慰主角不必因离别分心，引导主角将心神专注在眼前的榫卯与七千年的匠心之上。",
+    "抽取与播放归 Y5 波（洗牌袋整轮不重复；池空/缺文件不弹+告警）。",
+    "英文字段（2026-11-01 增补）：可选「lines_en」（与 lines 逐条等长、按句一一对应）；lines_en 缺失或缺省时回退显示中文 lines，既有中文字段一律不动。"
+  ],
+  "lines": [
+    "看我作甚？看手里的木头！只要这门手艺在，咱们就永远都在。",
+    "别分心，现在的你已经不需要为离别感伤，也不用为锐眼耗费力气了，放手去合上它！",
+    "手别抖。七千年的时光都静静淌在你的凿痕里呢，沉住气，慢慢收尾。",
+    "好啦，别总拿眼神瞟我。我这不是还在边上好好陪着你嘛，快拼你的！",
+    "‘锐眼’如今已是你的本能了。闭上眼，木料该往哪儿转、卯眼该往哪儿咬，你心里全清楚。",
+    "天下没有不散的筵席，但在时间的循环里，我们迟早还会再相遇的。",
+    "把心沉进木料里去。当年先民在水边构木为巢时，眼里也唯有这一榫一卯。",
+    "累了？歇一口气也无妨。这最后一件活儿，值得你最耐心、最郑重地去对待。",
+    "转一转视角，瞧瞧这浑然天成的结构。现代的技术再先进，这一咬一合的灵魂，终究是你的双手赋予的。",
+    "不要怕前路未知的强敌。能把这沉甸甸的千年非遗扛起来的人，天底下还有什么难得倒你？",
+    "衣橱里的衣裳你若是喜欢，往后就留着穿。不过眼下嘛，还是专心把这最后一关拿下！",
+    "听听这木头接合的脆响……真好听啊。这是我陪你走过九十九程里，听过最动人的声音。",
+    "哪怕时间重置千百次，我也绝不会认错你下刀时这专注的模样。",
+    "专心致志，方得始终。把这最后一道榫头推进去吧，我在终点看着你呢！",
+    "去吧，去解开所有的谜团，去打破背后的枷锁，去见那些你在未来拼尽全力想要守护的人。",
+    "落锤吧，大匠——为这走过了七千年的旅途，画上最圆满的句号！"
+  ],
+  "lines_en": [
+    "Why look at me? Look at the wood in your hands! While this craft endures, we endure with it.",
+    "Don't be distracted. You no longer need mourn a parting, nor spend strength on the Keen Eye—go and close that joint!",
+    "Steady those hands. Seven thousand years run quietly in your chisel marks—hold your breath, and finish slowly.",
+    "All right, stop glancing at me. Am I not still here beside you, safe and sound? Back to your piecing!",
+    "The Keen Eye is instinct now. Close your eyes—where the timber should turn, where the mortise should bite, you know it all.",
+    "No feast under heaven lasts forever—but in the circle of time, we will meet again, sooner or later.",
+    "Sink your heart into the timber. When the ancestors framed wood into nests by the water, their eyes held only this—one tenon, one mortise.",
+    "Tired? A breath's rest does no harm. This final piece deserves your fullest patience and your most solemn care.",
+    "Turn the view—look how the structure was born whole. However advanced modern technique grows, the soul of this bite and clasp was given by your two hands.",
+    "Fear no unknown foe on the road ahead. One who can shoulder this weighty thousand-year heritage—what under heaven could ever stop you?",
+    "If you like the outfits in the Wardrobe, keep them for the days ahead. But for now—focus, and take this final level!",
+    "Listen to that crisp ring of wood meeting wood... how lovely. Of all ninety-nine journeys I have walked with you, it is the most moving sound I've heard.",
+    "Even if time were reset a thousand times over, I could never mistake that focused face of yours when the blade goes in.",
+    "Whole heart, whole will—that is how endings are kept true. Push this last tenon home; I'll be watching at the finish!",
+    "Go—untangle every mystery, break the chains at your back, and meet the people you will give everything to protect in the future.",
+    "Strike the hammer, master builder—and bring this seven-thousand-year journey to its most perfect close!"
+  ]
+}
